@@ -34,11 +34,14 @@ declare module '$env/static/private' {
 	export const GTK_THEME: string;
 	export const HYPRLAND_CMD: string;
 	export const npm_config_cache: string;
+	export const TERM_PROGRAM_VERSION: string;
 	export const GTK_IM_MODULE: string;
 	export const XDG_BACKEND: string;
 	export const CLUTTER_BACKEND: string;
+	export const TMUX: string;
 	export const QT_WAYLAND_DISABLE_WINDOWDECORATION: string;
 	export const NODE: string;
+	export const AGENT: string;
 	export const COLOR: string;
 	export const npm_config_local_prefix: string;
 	export const XMODIFIERS: string;
@@ -55,11 +58,13 @@ declare module '$env/static/private' {
 	export const XDG_SESSION_TYPE: string;
 	export const npm_config_init_module: string;
 	export const PERPLEXITY_API_KEY: string;
+	export const _: string;
 	export const WAYFER_DATABASE_HOST: string;
 	export const MOTD_SHOWN: string;
 	export const GDM_LANG: string;
 	export const HOME: string;
 	export const USERNAME: string;
+	export const OPENCODE: string;
 	export const LANG: string;
 	export const _JAVA_AWT_WM_NONREPARENTING: string;
 	export const XDG_CURRENT_DESKTOP: string;
@@ -80,6 +85,7 @@ declare module '$env/static/private' {
 	export const WAYFER_DATABASE_PORT: string;
 	export const npm_config_prefix: string;
 	export const USER: string;
+	export const TMUX_PANE: string;
 	export const WAYFER_DATABASE_PASSWORD: string;
 	export const HYPRLAND_INSTANCE_SIGNATURE: string;
 	export const DISPLAY: string;
@@ -110,7 +116,7 @@ declare module '$env/static/private' {
 	export const WAYFER_DATABASE_USER: string;
 	export const npm_node_execpath: string;
 	export const HYPRCURSOR_SIZE: string;
-	export const _: string;
+	export const TERM_PROGRAM: string;
 	export const NODE_ENV: string;
 }
 
@@ -149,11 +155,14 @@ declare module '$env/dynamic/private' {
 		GTK_THEME: string;
 		HYPRLAND_CMD: string;
 		npm_config_cache: string;
+		TERM_PROGRAM_VERSION: string;
 		GTK_IM_MODULE: string;
 		XDG_BACKEND: string;
 		CLUTTER_BACKEND: string;
+		TMUX: string;
 		QT_WAYLAND_DISABLE_WINDOWDECORATION: string;
 		NODE: string;
+		AGENT: string;
 		COLOR: string;
 		npm_config_local_prefix: string;
 		XMODIFIERS: string;
@@ -170,11 +179,13 @@ declare module '$env/dynamic/private' {
 		XDG_SESSION_TYPE: string;
 		npm_config_init_module: string;
 		PERPLEXITY_API_KEY: string;
+		_: string;
 		WAYFER_DATABASE_HOST: string;
 		MOTD_SHOWN: string;
 		GDM_LANG: string;
 		HOME: string;
 		USERNAME: string;
+		OPENCODE: string;
 		LANG: string;
 		_JAVA_AWT_WM_NONREPARENTING: string;
 		XDG_CURRENT_DESKTOP: string;
@@ -195,6 +206,7 @@ declare module '$env/dynamic/private' {
 		WAYFER_DATABASE_PORT: string;
 		npm_config_prefix: string;
 		USER: string;
+		TMUX_PANE: string;
 		WAYFER_DATABASE_PASSWORD: string;
 		HYPRLAND_INSTANCE_SIGNATURE: string;
 		DISPLAY: string;
@@ -225,7 +237,7 @@ declare module '$env/dynamic/private' {
 		WAYFER_DATABASE_USER: string;
 		npm_node_execpath: string;
 		HYPRCURSOR_SIZE: string;
-		_: string;
+		TERM_PROGRAM: string;
 		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;

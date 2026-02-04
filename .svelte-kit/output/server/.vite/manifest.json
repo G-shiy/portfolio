@@ -6,7 +6,8 @@
     "isEntry": true,
     "imports": [
       "_internal.js",
-      "_environment.js"
+      "_environment.js",
+      "_server.js"
     ]
   },
   "_context.js": {
@@ -43,8 +44,13 @@
       "_index.js",
       "_environment.js",
       "_context.js",
-      "_equality.js"
+      "_equality.js",
+      "_server.js"
     ]
+  },
+  "_server.js": {
+    "file": "chunks/server.js",
+    "name": "server"
   },
   "_shared.js": {
     "file": "chunks/shared.js",
@@ -64,7 +70,8 @@
     "isEntry": true,
     "imports": [
       "_shared.js",
-      "_environment.js"
+      "_environment.js",
+      "_server.js"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte": {
@@ -85,6 +92,7 @@
     "isEntry": true,
     "imports": [
       "_environment.js",
+      "_server.js",
       "_shared.js",
       "_exports.js",
       "_utils.js",
@@ -103,10 +111,12 @@
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js"
+      "_index.js",
+      "_server.js",
+      "_context.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.DZq3tHvh.css"
+      "_app/immutable/assets/_layout.CrWffd3S.css"
     ]
   },
   "src/routes/+page.svelte": {

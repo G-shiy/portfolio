@@ -1,4 +1,4 @@
-import { l as escape_html, n as noop, m as set_ssr_context, p as ssr_context, q as push, t as pop } from "./context.js";
+import { k as escape_html, n as noop, m as set_ssr_context, p as ssr_context, q as push, t as pop } from "./context.js";
 import { clsx as clsx$1 } from "clsx";
 import * as devalue from "devalue";
 const DERIVED = 1 << 1;
@@ -933,6 +933,9 @@ function attributes(attrs, css_hash, classes, styles, flags = 0) {
   }
   return attr_str;
 }
+function stringify(value) {
+  return typeof value === "string" ? value : value == null ? "" : value + "";
+}
 function attr_class(value, hash, directives) {
   var result = to_class(value, hash, directives);
   return result ? ` class="${escape_html(result, true)}"` : "";
@@ -958,6 +961,7 @@ export {
   COMMENT_NODE as C,
   DIRTY as D,
   ERROR_VALUE as E,
+  ensure_array_like as F,
   HYDRATION_ERROR as H,
   INERT as I,
   LEGACY_PROPS as L,
@@ -989,6 +993,7 @@ export {
   is_passive_event as u,
   render as v,
   attr_class as w,
-  slot as x,
-  ensure_array_like as y
+  attr as x,
+  slot as y,
+  stringify as z
 };
