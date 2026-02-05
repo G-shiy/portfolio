@@ -136,4 +136,43 @@
 		gap: 0.5rem;
 		margin-top: auto;
 	}
+
+	/* Mobile */
+	@media (max-width: 768px) {
+		.project-header {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0.5rem;
+			margin-bottom: 1.25rem;
+		}
+
+		.project-header h3 {
+			font-size: 1rem;
+		}
+
+		.project-company {
+			font-size: 0.75rem;
+		}
+
+		.project-description {
+			font-size: 0.85rem;
+			margin-bottom: 1.25rem;
+		}
+
+		.project-metric {
+			padding: 0.45rem 0.85rem;
+			margin-bottom: 1.25rem;
+		}
+
+		.project-metric strong {
+			font-size: 0.75rem;
+		}
+	}
+
+	/* Small mobile */
+	@media (max-width: 480px) {
+		.project-header h3 {
+			font-size: 0.95rem;
+		}
+	}
 </style>

@@ -1,10 +1,8 @@
 <section id="sobre">
   <h2>Sobre Mim</h2>
 
-  <div
-    style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 2rem; margin-bottom: 3rem;"
-  >
-    <div>
+  <div class="about-grid">
+    <div class="about-content">
       <p>
         Olá! Me chamo Gustavo, tenho 22 anos e atuo como desenvolvedor backend, 
         atualmente estou prestando serviços de consultoria e desenvolvimento de 
@@ -12,22 +10,16 @@
         Java Spring, Svelte e React.
       </p>
 
-      <div
-        style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem;"
-      >
-        <div
-          style="background: var(--bg-card); padding: 1rem; border-radius: 12px; border: 1px solid var(--border);"
-        >
-          <p style="margin: 0; color: var(--text-primary); font-size: 0.8rem;">
+      <div class="info-cards">
+        <div class="info-card">
+          <p>
             🎓 <strong>Systems Analysis</strong><br />
             📊 <strong>Monitoring & Reliability</strong><br />
             ☕ <strong>Coffee-driven Solver</strong>
           </p>
         </div>
-        <div
-          style="background: var(--bg-card); padding: 1rem; border-radius: 12px; border: 1px solid var(--border);"
-        >
-          <p style="margin: 0; color: var(--text-primary); font-size: 0.8rem;">
+        <div class="info-card">
+          <p>
             📚 <strong>Economics & Philosophy</strong><br />
             🔭 <strong>Backend Engineer</strong><br />
             🚀 <strong>Curva Tech Startup</strong>
@@ -36,11 +28,9 @@
       </div>
     </div>
 
-    <div
-      style="background: var(--bg-card); padding: 1.5rem; border-radius: 16px; border: 1px solid var(--border);"
-    >
-      <h4 style="margin-bottom: 1rem;">Stack Principal</h4>
-      <div class="project-tech" style="margin-top: 1rem;">
+    <div class="stack-card">
+      <h4>Stack Principal</h4>
+      <div class="project-tech">
         <span class="tech-tag">Go</span>
         <span class="tech-tag">PostgreSQL</span>
         <span class="tech-tag">MongoDB</span>
@@ -122,6 +112,44 @@
 </section>
 
 <style>
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .info-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .info-card {
+    background: var(--bg-card);
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+
+  .info-card p {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 0.8rem;
+  }
+
+  .stack-card {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+  }
+
+  .stack-card h4 {
+    margin-bottom: 1rem;
+  }
+
   .experience-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -199,9 +227,74 @@
     font-size: 0.8rem;
   }
 
+  /* Desktop */
   @media (min-width: 768px) {
     .experience-grid {
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .info-cards {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .info-card {
+      padding: 0.85rem;
+    }
+
+    .info-card p {
+      font-size: 0.75rem;
+    }
+
+    .stack-card {
+      padding: 1.25rem;
+    }
+
+    .experience-card {
+      padding: 1.5rem;
+    }
+
+    .experience-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .experience-header h4 {
+      font-size: 1rem;
+    }
+
+    .experience-date {
+      font-size: 0.75rem;
+    }
+
+    .experience-card p {
+      font-size: 0.85rem;
+    }
+
+    .experience-metric {
+      padding: 0.45rem 0.85rem;
+    }
+
+    .experience-metric strong {
+      font-size: 0.75rem;
+    }
+  }
+
+  /* Small mobile */
+  @media (max-width: 480px) {
+    .experience-header h4 {
+      font-size: 0.95rem;
     }
   }
 </style>

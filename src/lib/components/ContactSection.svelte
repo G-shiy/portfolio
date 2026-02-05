@@ -1,33 +1,27 @@
-<section id="contato" style="text-align: center;">
+<section id="contato" class="contact-section">
   <h2>Contato</h2>
 
-  <p style="max-width: 600px; margin: 0 auto 2rem auto;">
+  <p class="contact-intro">
     Interessado em conversar sobre projetos, tecnologia ou oportunidades? Fique
     à vontade para entrar em contato.
   </p>
 
-  <div
-    style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 800px; margin: 0 auto 3rem auto;"
-  >
-    <div
-      style="background: var(--bg-card); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border); text-align: left;"
-    >
-      <p style="margin: 0; color: var(--text-primary);">
+  <div class="contact-cards">
+    <div class="contact-card">
+      <p>
         📞 <strong>Telefone:</strong><br />
         +55 12 98856-8980
       </p>
     </div>
-    <div
-      style="background: var(--bg-card); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border); text-align: left;"
-    >
-      <p style="margin: 0; color: var(--text-primary);">
+    <div class="contact-card">
+      <p>
         📧 <strong>Email:</strong><br />
         siqgustavo2@hotmail.com
       </p>
     </div>
   </div>
 
-  <div class="contact-links" style="justify-content: center;">
+  <div class="contact-links">
     <a
       href="https://github.com/G-shiy"
       class="btn btn-secondary"
@@ -47,3 +41,74 @@
     <a href="tel:+5512988568980" class="btn btn-secondary"> 📞 Ligar </a>
   </div>
 </section>
+
+<style>
+  .contact-section {
+    text-align: center;
+  }
+
+  .contact-intro {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+  }
+
+  .contact-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+  }
+
+  .contact-card {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    text-align: left;
+  }
+
+  .contact-card p {
+    margin: 0;
+    color: var(--text-primary);
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .contact-intro {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-cards {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-card {
+      padding: 1.25rem;
+    }
+
+    .contact-card p {
+      font-size: 0.9rem;
+    }
+
+    .contact-links {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .contact-links .btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>
