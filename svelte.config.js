@@ -14,7 +14,7 @@ const config = {
 			handleMissingId: 'warn'
 		},
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/portfolio-app' : ''
+			base: process.env.NODE_ENV === 'production' ? '/portfolio' : ''
 		}
 	}
 };
