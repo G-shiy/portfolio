@@ -88,7 +88,7 @@
 
 <style>
   .hero-section {
-    padding: 6rem 0 4rem 0;
+    padding: 3rem 0 4rem 0;
   }
 
   .hero-grid {
@@ -198,7 +198,7 @@
   /* Mobile Responsive */
   @media (max-width: 768px) {
     .hero-section {
-      padding: 3rem 0 2rem 0;
+      padding: 1.5rem 0 2rem 0;
     }
 
     .hero-grid {
