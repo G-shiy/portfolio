@@ -2,8 +2,9 @@
   <h2>Contato</h2>
 
   <p class="contact-intro">
-    Interessado em conversar sobre projetos, tecnologia ou oportunidades? Fique
-    à vontade para entrar em contato.
+    Empresas e profissionais interessados em <strong>orçamentos para projetos de software</strong>, 
+    consultoria em desenvolvimento ou parcerias comerciais? Entre em contato para uma 
+    <strong>cotação personalizada</strong> de serviços.
   </p>
 
   <div class="contact-cards">
@@ -15,7 +16,7 @@
     </div>
     <div class="contact-card">
       <p>
-        📧 <strong>Email:</strong><br />
+        📧 <strong>Email Comercial:</strong><br />
         siqgustavo2@hotmail.com
       </p>
     </div>
@@ -38,7 +39,7 @@
     >
       💼 LinkedIn
     </a>
-    <a href="https://wa.me/5512988568980?text=Olá%20Gustavo!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar." class="btn btn-secondary"> 💬 WhatsApp </a>
+    <a href="https://wa.me/5512988568980?text=Olá%20Gustavo!%20Tenho%20interesse%20em%20orçamento%20para%20projetos%20de%20software." class="btn btn-secondary"> 💬 Orçamento via WhatsApp </a>
   </div>
 </section>
 
