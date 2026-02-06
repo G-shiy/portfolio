@@ -34,11 +34,9 @@ declare module '$env/static/private' {
 	export const GTK_THEME: string;
 	export const HYPRLAND_CMD: string;
 	export const npm_config_cache: string;
-	export const TERM_PROGRAM_VERSION: string;
 	export const GTK_IM_MODULE: string;
 	export const XDG_BACKEND: string;
 	export const CLUTTER_BACKEND: string;
-	export const TMUX: string;
 	export const QT_WAYLAND_DISABLE_WINDOWDECORATION: string;
 	export const NODE: string;
 	export const AGENT: string;
@@ -85,7 +83,6 @@ declare module '$env/static/private' {
 	export const WAYFER_DATABASE_PORT: string;
 	export const npm_config_prefix: string;
 	export const USER: string;
-	export const TMUX_PANE: string;
 	export const WAYFER_DATABASE_PASSWORD: string;
 	export const HYPRLAND_INSTANCE_SIGNATURE: string;
 	export const DISPLAY: string;
@@ -101,6 +98,7 @@ declare module '$env/static/private' {
 	export const npm_package_json: string;
 	export const HYPRCURSOR_THEME: string;
 	export const QT_AUTO_SCREEN_SCALE_FACTOR: string;
+	export const XDG_DATA_DIRS: string;
 	export const GDK_BACKEND: string;
 	export const npm_config_noproxy: string;
 	export const PATH: string;
@@ -115,8 +113,8 @@ declare module '$env/static/private' {
 	export const QT_SCALE_FACTOR: string;
 	export const WAYFER_DATABASE_USER: string;
 	export const npm_node_execpath: string;
+	export const OLDPWD: string;
 	export const HYPRCURSOR_SIZE: string;
-	export const TERM_PROGRAM: string;
 	export const NODE_ENV: string;
 }
 
@@ -155,11 +153,9 @@ declare module '$env/dynamic/private' {
 		GTK_THEME: string;
 		HYPRLAND_CMD: string;
 		npm_config_cache: string;
-		TERM_PROGRAM_VERSION: string;
 		GTK_IM_MODULE: string;
 		XDG_BACKEND: string;
 		CLUTTER_BACKEND: string;
-		TMUX: string;
 		QT_WAYLAND_DISABLE_WINDOWDECORATION: string;
 		NODE: string;
 		AGENT: string;
@@ -206,7 +202,6 @@ declare module '$env/dynamic/private' {
 		WAYFER_DATABASE_PORT: string;
 		npm_config_prefix: string;
 		USER: string;
-		TMUX_PANE: string;
 		WAYFER_DATABASE_PASSWORD: string;
 		HYPRLAND_INSTANCE_SIGNATURE: string;
 		DISPLAY: string;
@@ -222,6 +217,7 @@ declare module '$env/dynamic/private' {
 		npm_package_json: string;
 		HYPRCURSOR_THEME: string;
 		QT_AUTO_SCREEN_SCALE_FACTOR: string;
+		XDG_DATA_DIRS: string;
 		GDK_BACKEND: string;
 		npm_config_noproxy: string;
 		PATH: string;
@@ -236,8 +232,8 @@ declare module '$env/dynamic/private' {
 		QT_SCALE_FACTOR: string;
 		WAYFER_DATABASE_USER: string;
 		npm_node_execpath: string;
+		OLDPWD: string;
 		HYPRCURSOR_SIZE: string;
-		TERM_PROGRAM: string;
 		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;

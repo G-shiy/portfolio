@@ -38,7 +38,7 @@
     >
       💼 LinkedIn
     </a>
-    <a href="tel:+5512988568980" class="btn btn-secondary"> 📞 Ligar </a>
+    <a href="https://wa.me/5512988568980?text=Olá%20Gustavo!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar." class="btn btn-secondary"> 💬 WhatsApp </a>
   </div>
 </section>
 
