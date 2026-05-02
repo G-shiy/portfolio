@@ -42,7 +42,7 @@
 
 <footer class="footer">
   <div class="container footer-inner">
-    <p>© 2026 Backend.Systems — Gustavo Siqueira</p>
+    <p>© 2026 Gustavo Siqueira</p>
     <div class="footer-links">
       <a href="https://github.com/G-shiy" target="_blank" rel="noopener noreferrer">GitHub</a>
       <a href="https://www.linkedin.com/in/siqgustavo/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -74,6 +74,7 @@
     gap: 12px;
     font-weight: 700;
     letter-spacing: -0.03em;
+    text-decoration: none;
   }
 
   .brand-mark {

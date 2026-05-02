@@ -5,7 +5,7 @@
       meta: 'featured / backend architecture',
       description: 'Sistema de gestão de comissões com Go, Gin, HTMX e Templ. Clean Architecture, JWT auth, logging estruturado e migrations automatizadas.',
       tech: ['Go', 'Gin', 'HTMX', 'Templ', 'PostgreSQL', 'SQLC'],
-      techAccent: ['Clean Architecture', 'JWT', 'Docker', 'OWASP/LGPD', 'Idempotency'],
+      techAccent: ['Clean Architecture', 'JWT', 'Docker', 'OWASP/LGPD'],
       link: '#',
       featured: true
     },
@@ -55,7 +55,7 @@
 <section id="projetos" class="section" style="padding: 48px 0;">
   <div class="container">
     <div class="section-header reveal" style="margin-bottom: 24px;">
-      <div class="eyebrow">Projetos</div>
+      <div class="eyebrow" style="font-size: 0.7rem;">Projetos</div>
       <h2 style="font-size: clamp(1.6rem, 3vw, 2.2rem);">Experiência técnica</h2>
     </div>
 
