@@ -20,38 +20,12 @@
           bora conversar.
         </p>
 
-        <div class="badge-row">
-          <a
-            href="https://wa.me/5512996694456"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="badge"
-            style="border-color: rgba(103, 211, 145, 0.32); background: rgba(103, 211, 145, 0.1); color: #a7f3d0; text-decoration: none;"
-            >WhatsApp</a
-          >
-          <a
-            href="https://www.linkedin.com/in/siqgustavo/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="badge"
-            style="border-color: rgba(92, 200, 255, 0.32); background: rgba(92, 200, 255, 0.1); color: #bdebff; text-decoration: none;"
-            >LinkedIn</a
-          >
-          <a
-            href="https://github.com/G-shiy"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="badge"
-            style="border-color: rgba(244, 184, 96, 0.32); background: rgba(244, 184, 96, 0.1); color: #ffd99a; text-decoration: none;"
-            >GitHub</a
-          >
-          <a
-            href="mailto:siqgustavo2@hotmail.com"
-            class="badge"
-            style="border-color: rgba(196, 181, 253, 0.32); background: rgba(196, 181, 253, 0.1); color: #ddd6fe; text-decoration: none;"
-            >Email</a
-          >
-        </div>
+            <div class="badge-row">
+              <a href="https://wa.me/5512996694456" target="_blank" rel="noopener noreferrer" class="badge link-badge" style="border-color: rgba(103, 211, 145, 0.32); background: rgba(103, 211, 145, 0.1); color: #a7f3d0;">WhatsApp</a>
+              <a href="https://www.linkedin.com/in/siqgustavo/" target="_blank" rel="noopener noreferrer" class="badge link-badge" style="border-color: rgba(92, 200, 255, 0.32); background: rgba(92, 200, 255, 0.1); color: #bdebff;">LinkedIn</a>
+              <a href="https://github.com/G-shiy" target="_blank" rel="noopener noreferrer" class="badge link-badge" style="border-color: rgba(244, 184, 96, 0.32); background: rgba(244, 184, 96, 0.1); color: #ffd99a;">GitHub</a>
+              <a href="mailto:siqgustavo2@hotmail.com" class="badge link-badge" style="border-color: rgba(196, 181, 253, 0.32); background: rgba(196, 181, 253, 0.1); color: #ddd6fe;">Email</a>
+            </div>
 
         <a
           href="https://www.linkedin.com/in/siqgustavo/"
