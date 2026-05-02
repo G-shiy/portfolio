@@ -2,12 +2,11 @@
   const projects = [
     {
       title: 'Sistema de Gestão de Comissões',
-      meta: 'featured / backend architecture',
+      meta: 'backend architecture',
       description: 'Sistema de gestão de comissões com Go, Gin, HTMX e Templ. Clean Architecture, JWT auth, logging estruturado e migrations automatizadas.',
       tech: ['Go', 'Gin', 'HTMX', 'Templ', 'PostgreSQL', 'SQLC'],
-      techAccent: ['Clean Architecture', 'JWT', 'Docker', 'OWASP/LGPD'],
-      link: '#',
-      featured: true
+      techAccent: ['Clean Architecture', 'JWT', 'Docker', 'OWASP/LGPD', 'Idempotency'],
+      link: '#'
     },
     {
       title: 'Sistema de Autenticação e Auditoria',
@@ -60,8 +59,8 @@
     </div>
 
     <div class="grid-3 reveal" style="gap: 20px;">
-      {#each projects as project}
-        <article class="card" class:featured-card={project.featured} style="padding: 22px;">
+        {#each projects as project}
+        <article class="card" style="padding: 22px;">
           <div>
             <div class="card-meta" style="font-size: 0.7rem;">{project.meta}</div>
             <h3 style="font-size: 1.1rem;">{project.title}</h3>

@@ -272,12 +272,14 @@ p {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
+  grid-auto-rows: 1fr;
 }
 
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
+  grid-auto-rows: 1fr;
 }
 
 .card {
@@ -290,6 +292,13 @@ p {
     var(--surface);
   transition: var(--transition);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card > div:first-child {
+  flex: 1;
 }
 
 .card:hover {
@@ -318,7 +327,6 @@ p {
 
 .featured-card {
   grid-column: span 2;
-  min-height: 340px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

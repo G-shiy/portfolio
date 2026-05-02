@@ -14,7 +14,7 @@
   }
 </script>
 
-<nav>
+<nav class="nav">
   <div class="container nav-inner">
     <a href="{base}/" class="brand" aria-label="Página inicial">
       <span class="brand-mark">GS</span>
@@ -52,7 +52,7 @@
 </footer>
 
 <style>
-  nav {
+  .nav {
     position: sticky;
     top: 0;
     z-index: 100;
@@ -88,7 +88,7 @@
       linear-gradient(135deg, rgba(92, 200, 255, 0.16), rgba(244, 184, 96, 0.08)),
       var(--surface);
     color: var(--primary);
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "JetBrains Mono", monospace;
     font-weight: 700;
     font-size: 0.85rem;
     box-shadow: 0 0 30px rgba(92, 200, 255, 0.08);
