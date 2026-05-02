@@ -5,18 +5,20 @@
       <h2 style="font-size: clamp(1.6rem, 3vw, 2.2rem);">Resumo profissional</h2>
     </div>
 
-    <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start;">
-      <p style="font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary); margin: 0; padding-top: 12px;">
-        Olá, me chamo Gustavo, tenho 22 anos. Sou alguém curioso por natureza, que gosta de entender as coisas com profundidade, mas sem perder o bom humor no processo.
-        <br /><br />
-        Gosto de tecnologia, RPG, anime, perfumes e de tudo que carrega um pouco de personalidade, seja um teclado retrô, uma boa história ou uma ideia diferente que prende minha atenção. Tenho facilidade em me envolver com aquilo que desperta minha curiosidade e gosto de transformar interesses simples em algo com significado.
-        <br /><br />
-        No fim, sou uma mistura de intensidade e leveza: penso bastante, gosto de aprender, valorizo boas conversas e tento levar para a vida um pouco dessa vontade de criar, descobrir e evoluir.
-      </p>
+    <div class="reveal" style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 24px; align-items: start;">
+      <div>
+        <p style="font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary); margin: 0; padding-top: 12px;">
+          Olá, me chamo Gustavo, tenho 22 anos. Sou alguém curioso por natureza, que gosta de entender as coisas com profundidade, mas sem perder o bom humor no processo.
+          <br /><br />
+          Gosto de tecnologia, RPG, anime, perfumes e de tudo que carrega um pouco de personalidade, seja um teclado retrô, uma boa história ou uma ideia diferente que prende minha atenção. Tenho facilidade em me envolver com aquilo que desperta minha curiosidade e gosto de transformar interesses simples em algo com significado.
+          <br /><br />
+          No fim, sou uma mistura de intensidade e leveza: penso bastante, gosto de aprender, valorizo boas conversas e tento levar para a vida um pouco dessa vontade de criar, descobrir e evoluir.
+        </p>
 
-      <div class="callout" style="margin-top: 24px; font-size: 0.88rem; border-left: 3px solid var(--primary);">
-        <div style="font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary);">
-          "Quem comtempla se torna consciente. Quem age, se torna livre." — <strong>Goethe</strong>
+        <div class="callout" style="margin-top: 24px; font-size: 0.88rem; border-left: 3px solid var(--primary);">
+          <div style="font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary);">
+            "A felicidade não é fazer o que se quer, mas querer o que se faz." — <strong>Santo Agostinho</strong>
+          </div>
         </div>
       </div>
 
@@ -64,7 +66,7 @@
 
 <style>
   @media (max-width: 900px) {
-    div[style*="grid-template-columns: 1fr 1fr"] {
+    div[style*="grid-template-columns: 1.3fr 1fr"] {
       grid-template-columns: 1fr !important;
     }
     div[style*="display: flex; flex-direction: column;"] {
