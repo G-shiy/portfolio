@@ -30,8 +30,8 @@
   --radius-lg: 24px;
   --radius-xl: 32px;
 
-  --container: 100%;
-  --container-wide: 100%;
+  --container: 1400px;
+  --container-wide: 1600px;
 
   --shadow-soft: 0 24px 80px rgba(0, 0, 0, 0.32);
   --transition: 180ms ease;
@@ -305,8 +305,12 @@ textarea {
 }
 
 .container {
-  width: var(--container);
-  padding: 0 24px;
+  width: min(100% - 32px, var(--container));
+  margin-inline: auto;
+}
+
+.wide {
+  width: min(100% - 32px, var(--container-wide));
   margin-inline: auto;
 }
 
@@ -852,7 +856,7 @@ pre {
 @media (max-width: 560px) {
   .container,
   .wide {
-    padding: 0 12px;
+    width: min(100% - 24px, var(--container));
   }
   .metrics {
     grid-template-columns: 1fr;
