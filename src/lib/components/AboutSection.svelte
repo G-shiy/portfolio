@@ -6,7 +6,7 @@
     </div>
 
     <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start;">
-      <p style="font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary); margin: 0; padding-top: 2px;">
+      <p style="font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary); margin: 0; padding-top: 12px;">
         Olá, me chamo Gustavo, tenho 22 anos. Sou alguém curioso por natureza, que gosta de entender as coisas com profundidade, mas sem perder o bom humor no processo.
         <br /><br />
         Gosto de tecnologia, RPG, anime, perfumes e de tudo que carrega um pouco de personalidade, seja um teclado retrô, uma boa história ou uma ideia diferente que prende minha atenção. Tenho facilidade em me envolver com aquilo que desperta minha curiosidade e gosto de transformar interesses simples em algo com significado.
@@ -14,7 +14,7 @@
         No fim, sou uma mistura de intensidade e leveza: penso bastante, gosto de aprender, valorizo boas conversas e tento levar para a vida um pouco dessa vontade de criar, descobrir e evoluir.
       </p>
 
-      <div style="display: flex; flex-direction: column; gap: 16px; max-width: 420px;">
+      <div style="display: flex; flex-direction: column; gap: 16px; max-width: 420px; margin-top: -8px;">
         <article class="card" style="padding: 12px;">
           <div>
             <div class="card-meta" style="font-size: 0.65rem;">formação</div>
