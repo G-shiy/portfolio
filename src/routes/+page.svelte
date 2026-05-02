@@ -3,6 +3,7 @@
   import HeroSection from '$lib/components/HeroSection.svelte';
   import ProjectsSection from '$lib/components/ProjectsSection.svelte';
   import AboutSection from '$lib/components/AboutSection.svelte';
+  import ReadingsSection from '$lib/components/ReadingsSection.svelte';
   import ContactSection from '$lib/components/ContactSection.svelte';
 
   onMount(() => {
@@ -24,4 +25,5 @@
 <HeroSection />
 <AboutSection />
 <ProjectsSection />
+<ReadingsSection />
 <ContactSection />
