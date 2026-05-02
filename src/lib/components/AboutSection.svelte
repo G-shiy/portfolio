@@ -44,6 +44,17 @@
             >
           </div>
         </div>
+
+        <div style="margin-top: 24px;">
+          <h4 style="font-size: 1rem; margin-bottom: 12px; color: var(--text);">Leituras Fundamentais</h4>
+          <ul style="font-size: 0.85rem; line-height: 1.6; color: var(--text-secondary); padding-left: 20px;">
+            <li>Entendendo Algoritmos - Aditya Y. Bhargava</li>
+            <li>Engenharia de Software: Conceitos e Práticas – Raul Sidnei Wazlawick</li>
+            <li>The Art of Computer Programming (Volume 1) – Donald E. Knuth</li>
+            <li>Arquitetura e Organização de Computadores – William Stallings</li>
+            <li>Clean Code – Robert C. Martin</li>
+          </ul>
+        </div>
       </div>
 
       <div
@@ -61,8 +72,15 @@
           </div>
           <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 10px;">
             <strong>Análise de Sistemas</strong><br />
-            [FACULDADE]<br />
-            [INÍCIO] - [TÉRMINO]
+            Faculdade de Informática e Administração - FIAP<br />
+            São Paulo, SP<br />
+            08/2024 - 08/2026 (previsão)
+          </p>
+          <p style="font-size: 0.8rem; line-height: 1.4; color: var(--text-muted); margin-bottom: 10px;">
+            <strong>Ensino Médio Técnico</strong><br />
+            Instituto Máximus Ribeiro Goulart<br />
+            São José dos Campos, SP<br />
+            02/2019 - 12/2021
           </p>
           <div class="badge-row" style="gap: 5px;">
             <span class="badge java" style="font-size: 0.65rem; padding: 3px 7px;">Java</span>
@@ -85,10 +103,10 @@
           </div>
           <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 10px;">
             <strong>Crediclass</strong> (01/2026–Atual)<br />
+            <strong>Rawlings Foundation</strong> (02/2026–Atual)<br />
             <strong>Curva</strong> (08/2025–12/2025)<br />
             <strong>Golden Tulip</strong> (02/2024–06/2025)<br />
-            <strong>Exército Brasileiro</strong> (03/2023–02/2024)<br />
-            <strong>[5ª EMPRESA]</strong> ([PERÍODO])
+            <strong>Exército Brasileiro</strong> (03/2023–02/2024)
           </p>
           <div class="badge-row" style="gap: 5px;">
             <span class="badge go" style="font-size: 0.65rem; padding: 3px 7px;"
