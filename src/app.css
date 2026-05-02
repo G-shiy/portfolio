@@ -94,12 +94,12 @@ textarea {
 }
 
 .container {
-  width: min(100% - 40px, var(--container));
+  width: min(100% - 20px, var(--container));
   margin-inline: auto;
 }
 
 .wide {
-  width: min(100% - 40px, var(--container-wide));
+  width: min(100% - 20px, var(--container-wide));
   margin-inline: auto;
 }
 
@@ -632,7 +632,7 @@ pre {
 @media (max-width: 560px) {
   .container,
   .wide {
-    width: min(100% - 32px, var(--container));
+    width: min(100% - 16px, var(--container));
   }
   .metrics {
     grid-template-columns: 1fr;
