@@ -1,43 +1,77 @@
 <section id="contato" class="section">
   <div class="container">
     <div class="section-header reveal">
-      <div class="eyebrow">Contato</div>
+      <div class="eyebrow" style="font-size: 1.0rem;">Contato</div>
       <h2>Uma chamada profissional, simples e objetiva.</h2>
-        <p class="lead">
-          Estou aberto a conversas sobre tecnologia, engenharia de software,
-          produtos, pessoas e ideias que desafiam o modo como pensamos.
-        </p>
+      <p class="lead">
+        Estou aberto a conversas sobre tecnologia, engenharia de software,
+        produtos, pessoas e ideias que desafiam o modo como pensamos.
+      </p>
     </div>
 
     <div class="grid-2 reveal">
       <aside class="card">
         <div class="card-meta">availability / professional contact</div>
         <h3>Vamos conversar? 🚀</h3>
-         <p>
-           Sou especialista em backend, mas gosto de entender o todo:
-           infraestrutura, produto, experiência e estratégia. Se você tem
-           uma ideia, um problema real ou quer trocar uma ideia sobre
-           tecnologia, bora conversar.
-         </p>
+        <p>
+          Sou especialista em backend, mas gosto de entender o todo:
+          infraestrutura, produto, experiência e estratégia. Se você tem uma
+          ideia, um problema real ou quer trocar uma ideia sobre tecnologia,
+          bora conversar.
+        </p>
 
-            <div class="badge-row">
-              <a href="https://wa.me/5512996694456" target="_blank" rel="noopener noreferrer" class="badge" style="border-color: rgba(103, 211, 145, 0.32); background: rgba(103, 211, 145, 0.1); color: #a7f3d0; text-decoration: none;">WhatsApp</a>
-              <a href="https://www.linkedin.com/in/siqgustavo/" target="_blank" rel="noopener noreferrer" class="badge" style="border-color: rgba(92, 200, 255, 0.32); background: rgba(92, 200, 255, 0.1); color: #bdebff; text-decoration: none;">LinkedIn</a>
-              <a href="https://github.com/G-shiy" target="_blank" rel="noopener noreferrer" class="badge" style="border-color: rgba(244, 184, 96, 0.32); background: rgba(244, 184, 96, 0.1); color: #ffd99a; text-decoration: none;">GitHub</a>
-              <a href="mailto:siqgustavo2@hotmail.com" class="badge" style="border-color: rgba(196, 181, 253, 0.32); background: rgba(196, 181, 253, 0.1); color: #ddd6fe; text-decoration: none;">Email</a>
-            </div>
+        <div class="badge-row">
+          <a
+            href="https://wa.me/5512996694456"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="badge"
+            style="border-color: rgba(103, 211, 145, 0.32); background: rgba(103, 211, 145, 0.1); color: #a7f3d0; text-decoration: none;"
+            >WhatsApp</a
+          >
+          <a
+            href="https://www.linkedin.com/in/siqgustavo/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="badge"
+            style="border-color: rgba(92, 200, 255, 0.32); background: rgba(92, 200, 255, 0.1); color: #bdebff; text-decoration: none;"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/G-shiy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="badge"
+            style="border-color: rgba(244, 184, 96, 0.32); background: rgba(244, 184, 96, 0.1); color: #ffd99a; text-decoration: none;"
+            >GitHub</a
+          >
+          <a
+            href="mailto:siqgustavo2@hotmail.com"
+            class="badge"
+            style="border-color: rgba(196, 181, 253, 0.32); background: rgba(196, 181, 253, 0.1); color: #ddd6fe; text-decoration: none;"
+            >Email</a
+          >
+        </div>
 
-        <a href="https://www.linkedin.com/in/siqgustavo/" class="external-link" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/siqgustavo/"
+          class="external-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Abrir LinkedIn ↗
         </a>
       </aside>
 
-      <div class="card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+      <div
+        class="card"
+        style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;"
+      >
         <div class="card-meta">direct contact</div>
         <h3>WhatsApp</h3>
         <p>
-          Clique abaixo para iniciar uma conversa direta no WhatsApp.
-          Envie uma mensagem com o contexto do projeto ou oportunidade.
+          Clique abaixo para iniciar uma conversa direta no WhatsApp. Envie uma
+          mensagem com o contexto do projeto ou oportunidade.
         </p>
 
         <a
