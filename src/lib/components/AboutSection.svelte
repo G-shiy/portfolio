@@ -34,7 +34,10 @@
           <strong>Crediclass</strong> — Desenvolvedor Backend (01/2026–Atual)<br />
           <strong>Curva</strong> — Desenvolvedor Backend (08/2025–12/2025)<br />
           <strong>Golden Tulip</strong> — Automação Financeira (02/2024–06/2025)<br />
-          <strong>Exército Brasileiro</strong> — Comunicações (03/2023–02/2024)
+          <strong>Exército Brasileiro</strong> — Comunicações (03/2023–02/2024)<br />
+          <span style="font-size: 0.9rem; color: var(--text-secondary);">
+            Sistemas internos com JavaFX, Spring Boot e Docker. Automação de escalas, restauração de servidor Samba.
+          </span>
         </p>
         <div class="badge-row">
           <span class="badge">Go</span>

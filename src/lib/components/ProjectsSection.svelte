@@ -11,7 +11,7 @@
     },
     {
       title: 'Sistema de Autenticação e Auditoria',
-      meta: 'case study / api platform',
+      meta: 'Curva / api platform',
       description: 'API com Spring Security/JWT, Proof-of-Possession e modelo granular de roles. Sistema de auditoria unificado, otimização JSON reduzindo build em 43%. Conformidade LGPD/GDPR.',
       tech: ['Java', 'Spring Boot', 'Spring Security', 'PostgreSQL', 'AWS S3'],
       techAccent: ['JWT', 'Zap Logger', 'Migrations', 'LGPD'],
@@ -27,7 +27,7 @@
     },
     {
       title: 'Sistema Financeiro Interno',
-      meta: 'case study / data',
+      meta: 'Golden Tulip / data',
       description: 'Sistema completo (Python/Flask + React) para conciliação, fluxo de caixa e relatórios. Automação de conciliações bancárias, controle de inadimplência com detecção automática. 75% redução no tempo de fechamento.',
       tech: ['Python', 'Flask', 'React', 'Pandas', 'Selenium'],
       techAccent: ['Automation', 'Financial Reports', 'Bank Reconciliation'],
