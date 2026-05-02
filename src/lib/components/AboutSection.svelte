@@ -31,10 +31,10 @@
         <div class="card-meta">experience / companies</div>
         <h3>Experiência profissional</h3>
         <p>
-          <strong>Crediclass</strong> — Desenvolvedor Backend (2026–Atual)<br />
-          <strong>Curva</strong> — Desenvolvedor Backend (2025)<br />
-          <strong>Golden Tulip</strong> — Automação Financeira (2024–2025)<br />
-          <strong>Exército Brasileiro</strong> — Comunicações (2023–2024)
+          <strong>Crediclass</strong> — Desenvolvedor Backend (01/2026–Atual)<br />
+          <strong>Curva</strong> — Desenvolvedor Backend (08/2025–12/2025)<br />
+          <strong>Golden Tulip</strong> — Automação Financeira (02/2024–06/2025)<br />
+          <strong>Exército Brasileiro</strong> — Comunicações (03/2023–02/2024)
         </p>
         <div class="badge-row">
           <span class="badge">Go</span>

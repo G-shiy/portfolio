@@ -10,30 +10,6 @@
     </div>
 
     <div class="grid-2 reveal">
-      <form class="card form">
-        <div class="field">
-          <label for="name">Nome</label>
-          <input id="name" type="text" placeholder="Seu nome" />
-        </div>
-
-        <div class="field">
-          <label for="email">E-mail</label>
-          <input id="email" type="email" placeholder="voce@email.com" />
-        </div>
-
-        <div class="field">
-          <label for="message">Mensagem</label>
-          <textarea
-            id="message"
-            placeholder="Conte brevemente sobre o projeto ou oportunidade."
-          ></textarea>
-        </div>
-
-        <button class="btn btn-primary" type="button">
-          Enviar mensagem
-        </button>
-      </form>
-
       <aside class="card">
         <div class="card-meta">availability / professional contact</div>
         <h3>Vamos conversar sobre sistemas bem projetados.</h3>
@@ -44,16 +20,39 @@
         </p>
 
         <div class="badge-row">
-          <span class="badge neutral">Email</span>
+          <span class="badge neutral">WhatsApp</span>
           <span class="badge neutral">LinkedIn</span>
           <span class="badge neutral">GitHub</span>
-          <span class="badge neutral">WhatsApp</span>
+          <span class="badge neutral">Email</span>
         </div>
 
         <a href="https://www.linkedin.com/in/siqgustavo/" class="external-link" target="_blank" rel="noopener noreferrer">
           Abrir LinkedIn ↗
         </a>
       </aside>
+
+      <div class="card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <div class="card-meta">direct contact</div>
+        <h3>WhatsApp</h3>
+        <p>
+          Clique abaixo para iniciar uma conversa direta no WhatsApp.
+          Envie uma mensagem com o contexto do projeto ou oportunidade.
+        </p>
+
+        <a
+          href="https://wa.me/5512996694456?text=Olá%20Gustavo!%20Tenho%20interesse%20em%20orçamento%20para%20projetos%20de%20software."
+          class="btn btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="margin-top: 12px;"
+        >
+          💬 Conversar no WhatsApp
+        </a>
+
+        <span class="muted" style="margin-top: 12px; font-size: 0.85rem;">
+          +55 12 99669-4456
+        </span>
+      </div>
     </div>
   </div>
 </section>

@@ -1,52 +1,52 @@
 <script>
   const projects = [
     {
-      title: 'Commission Engine API',
+      title: 'Sistema de Gestão de Comissões',
       meta: 'featured / backend architecture',
-      description: 'Sistema backend para cálculo de comissões, autenticação, regras financeiras e gestão operacional com separação clara entre domínio, serviços e persistência.',
-      tech: ['Go', 'PostgreSQL', 'JWT'],
-      techAccent: ['Clean Boundaries'],
+      description: 'Sistema completo de gerenciamento de comissões arquitetado do zero. Go + Gin (RESTful API), HTMX + Templ (13 telas type-safe), PostgreSQL com SQLC. Clean Architecture (Handler → Service → Repository), JWT auth, Zap logging, Viper config, Goose migrations. Cálculo: Receita Bruta → Imposto → Receita Líquida → Comissão Parceiro/Consultor.',
+      tech: ['Go', 'Gin', 'HTMX', 'Templ', 'PostgreSQL', 'SQLC'],
+      techAccent: ['Clean Architecture', 'JWT', 'Docker', 'OWASP/LGPD', 'Idempotency', 'Zap Logger'],
       link: '#',
       featured: true
     },
     {
       title: 'Sistema de Autenticação e Auditoria',
       meta: 'case study / api platform',
-      description: 'API para centralizar fluxos internos, autenticação, regras de negócio e persistência. O projeto prioriza separação de responsabilidades, logging estruturado e evolução segura.',
-      tech: ['Java', 'Spring Boot', 'PostgreSQL', 'Docker'],
-      techAccent: ['Zap Logger', 'Migrations'],
+      description: 'API com Spring Security/JWT, Proof-of-Possession e modelo granular de roles. Sistema de auditoria unificado, otimização JSON reduzindo build em 43%. Conformidade LGPD/GDPR.',
+      tech: ['Java', 'Spring Boot', 'Spring Security', 'PostgreSQL', 'AWS S3'],
+      techAccent: ['JWT', 'Zap Logger', 'Migrations', 'LGPD'],
       link: '#'
     },
     {
       title: 'Microsserviço de Notificações',
       meta: 'stack / infrastructure',
-      description: 'Serviço assíncrono com filas internas e processamento concorrente. Estrutura completa de observabilidade com métricas e dashboards.',
+      description: 'Serviço assíncrono com filas internas e processamento concorrente. Estrutura completa de observabilidade com métricas (Prometheus) e dashboards (Grafana). 25% redução no MTTR.',
       tech: ['Go', 'MongoDB'],
-      techAccent: ['Prometheus', 'Grafana'],
+      techAccent: ['Prometheus', 'Grafana', 'Observability', 'Async Processing'],
       link: '#'
     },
     {
       title: 'Sistema Financeiro Interno',
       meta: 'case study / data',
-      description: 'Sistema completo para conciliação, fluxo de caixa e relatórios. Automação de conciliações bancárias e controle de inadimplência.',
-      tech: ['Python', 'Flask', 'React'],
-      techAccent: ['Pandas', 'Selenium'],
+      description: 'Sistema completo (Python/Flask + React) para conciliação, fluxo de caixa e relatórios. Automação de conciliações bancárias, controle de inadimplência com detecção automática. 75% redução no tempo de fechamento.',
+      tech: ['Python', 'Flask', 'React', 'Pandas', 'Selenium'],
+      techAccent: ['Automation', 'Financial Reports', 'Bank Reconciliation'],
       link: '#'
     },
     {
       title: 'Fintech Bank',
       meta: 'universitário / fintech',
-      description: 'Plataforma simulando operações bancárias com idempotência, transações ACID, testes unitários e autenticação JWT.',
-      tech: ['Java', 'Spring Boot'],
-      techAccent: ['OracleSQL', 'JUnit', 'Mockito'],
+      description: 'Plataforma simulando operações bancárias com idempotência, transações ACID, testes unitários (JUnit + Mockito) e autenticação JWT. 100% cobertura de testes.',
+      tech: ['Java', 'Spring Boot', 'OracleSQL'],
+      techAccent: ['JUnit', 'Mockito', 'ACID', 'Idempotency'],
       link: '#'
     },
     {
       title: 'Sistema ESG',
       meta: 'universitário / logistics',
-      description: 'Plataforma de logística de coleta de lixo com controle de pontos, métricas de resíduos, dashboard e requisições de coleta.',
-      tech: ['Java', 'C#'],
-      techAccent: ['OracleSQL', 'React'],
+      description: 'Plataforma de logística de coleta de lixo com controle de pontos, métricas de resíduos, dashboard e requisições de coleta pelo usuário. Gestão ambiental integrada.',
+      tech: ['Java', 'C#', 'OracleSQL', 'React'],
+      techAccent: ['Environmental', 'Dashboard', 'Logistics'],
       link: '#'
     }
   ];
