@@ -17,46 +17,46 @@
 
         <div class="callout" style="margin-top: 24px; font-size: 0.88rem; border-left: 3px solid var(--primary);">
           <div style="font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary);">
-            "A felicidade não é fazer o que se quer, mas querer o que se faz." — <strong>Santo Agostinho</strong>
+            "A felicidade não é fazer o que se quer, mas querer o que se faz." — <strong>Agostinho de Hipona</strong>
           </div>
         </div>
       </div>
 
-      <div style="display: flex; flex-direction: column; gap: 16px; max-width: 340px; margin-top: -24px;">
-        <article class="card" style="padding: 16px; border-left: 3px solid var(--primary); background: linear-gradient(135deg, rgba(92, 200, 255, 0.08), transparent); box-shadow: 0 4px 20px rgba(92, 200, 255, 0.1);">
+       <div style="display: flex; flex-direction: column; gap: 18px; max-width: 360px; margin-top: -24px;">
+        <article class="card" style="padding: 20px; border-left: 3px solid var(--primary); background: linear-gradient(135deg, rgba(92, 200, 255, 0.08), transparent); box-shadow: 0 4px 20px rgba(92, 200, 255, 0.1);">
           <div>
-            <div style="font-size: 1.3rem; margin-bottom: 8px;">🎓</div>
-            <div class="card-meta" style="font-size: 0.65rem;">formação</div>
-            <h3 style="font-size: 1.05rem;">Formação</h3>
-            <p style="font-size: 0.85rem; line-height: 1.5;">
+            <div style="font-size: 1.4rem; margin-bottom: 10px;">🎓</div>
+            <div class="card-meta" style="font-size: 0.7rem;">formação</div>
+            <h3 style="font-size: 1.15rem;">Formação</h3>
+            <p style="font-size: 0.92rem; line-height: 1.6;">
               <strong>Análise de Sistemas</strong><br />
               Monitoramento & Confiabilidade<br />
               Economia & Filosofia
             </p>
           </div>
-          <div class="badge-row" style="margin-top: 10px; gap: 5px;">
-            <span class="badge neutral" style="font-size: 0.62rem; padding: 3px 6px;">Go</span>
-            <span class="badge neutral" style="font-size: 0.62rem; padding: 3px 6px;">PostgreSQL</span>
-            <span class="badge neutral" style="font-size: 0.62rem; padding: 3px 6px;">Docker</span>
+          <div class="badge-row" style="margin-top: 12px; gap: 6px;">
+            <span class="badge go" style="font-size: 0.68rem; padding: 4px 8px;">Go</span>
+            <span class="badge database" style="font-size: 0.68rem; padding: 4px 8px;">PostgreSQL</span>
+            <span class="badge infrastructure" style="font-size: 0.68rem; padding: 4px 8px;">Docker</span>
           </div>
         </article>
 
-        <article class="card" style="padding: 16px; border-left: 3px solid var(--accent); background: linear-gradient(135deg, rgba(244, 184, 96, 0.08), transparent); box-shadow: 0 4px 20px rgba(244, 184, 96, 0.1);">
+        <article class="card" style="padding: 20px; border-left: 3px solid var(--accent); background: linear-gradient(135deg, rgba(244, 184, 96, 0.08), transparent); box-shadow: 0 4px 20px rgba(244, 184, 96, 0.1);">
           <div>
-            <div style="font-size: 1.3rem; margin-bottom: 8px;">💼</div>
-            <div class="card-meta" style="font-size: 0.65rem;">experiência</div>
-            <h3 style="font-size: 1.05rem;">Experiência</h3>
-            <p style="font-size: 0.82rem; line-height: 1.5;">
+            <div style="font-size: 1.4rem; margin-bottom: 10px;">💼</div>
+            <div class="card-meta" style="font-size: 0.7rem;">experiência</div>
+            <h3 style="font-size: 1.15rem;">Experiência</h3>
+            <p style="font-size: 0.92rem; line-height: 1.6;">
               <strong>Crediclass</strong> (01/2026–Atual)<br />
               <strong>Curva</strong> (08/2025–12/2025)<br />
               <strong>Golden Tulip</strong> (02/2024–06/2025)<br />
               <strong>Exército Brasileiro</strong> (03/2023–02/2024)
             </p>
           </div>
-          <div class="badge-row" style="margin-top: 10px; gap: 5px;">
-            <span class="badge" style="font-size: 0.62rem; padding: 3px 6px;">Go</span>
-            <span class="badge" style="font-size: 0.62rem; padding: 3px 6px;">Java</span>
-            <span class="badge accent" style="font-size: 0.62rem; padding: 3px 6px;">System Design</span>
+          <div class="badge-row" style="margin-top: 12px; gap: 6px;">
+            <span class="badge go" style="font-size: 0.68rem; padding: 4px 8px;">Go</span>
+            <span class="badge java" style="font-size: 0.68rem; padding: 4px 8px;">Java</span>
+            <span class="badge infrastructure" style="font-size: 0.68rem; padding: 4px 8px;">System Design</span>
           </div>
         </article>
       </div>

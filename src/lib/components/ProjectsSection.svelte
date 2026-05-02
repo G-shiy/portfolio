@@ -1,4 +1,23 @@
 <script>
+  const getBadgeClass = (tech) => {
+    const goStack = ['Go', 'Gin', 'HTMX', 'Templ', 'SQLC'];
+    const javaStack = ['Java', 'Spring Boot', 'Spring Security', 'JUnit', 'Mockito'];
+    const dbStack = ['PostgreSQL', 'MongoDB', 'OracleSQL', 'AWS S3'];
+    const obsStack = ['Prometheus', 'Grafana', 'Observability'];
+    const secStack = ['JWT', 'OWASP/LGPD', 'LGPD', 'Zap Logger', 'Migrations'];
+    const infraStack = ['Docker', 'Clean Architecture', 'Idempotency', 'ACID'];
+    const toolStack = ['Python', 'Flask', 'React', 'Pandas', 'Selenium', 'C#', 'Automation', 'Financial Reports', 'Environmental', 'Dashboard', 'Logistics'];
+
+    if (goStack.includes(tech)) return 'go';
+    if (javaStack.includes(tech)) return 'java';
+    if (dbStack.includes(tech)) return 'database';
+    if (obsStack.includes(tech)) return 'observability';
+    if (secStack.includes(tech)) return 'security';
+    if (infraStack.includes(tech)) return 'infrastructure';
+    if (toolStack.includes(tech)) return 'tool';
+    return 'neutral';
+  };
+
   const projects = [
     {
       title: 'Sistema de Gestão de Comissões',
@@ -68,10 +87,10 @@
 
             <div class="badge-row" style="margin-top: 14px; gap: 6px;">
               {#each project.tech as tech}
-                <span class="badge neutral" style="font-size: 0.68rem; padding: 5px 8px;">{tech}</span>
+                <span class="badge {getBadgeClass(tech)}" style="font-size: 0.68rem; padding: 5px 8px;">{tech}</span>
               {/each}
               {#each project.techAccent as tech}
-                <span class="badge accent" style="font-size: 0.68rem; padding: 5px 8px;">{tech}</span>
+                <span class="badge {getBadgeClass(tech)}" style="font-size: 0.68rem; padding: 5px 8px;">{tech}</span>
               {/each}
             </div>
           </div>

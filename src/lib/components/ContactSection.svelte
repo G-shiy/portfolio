@@ -3,28 +3,29 @@
     <div class="section-header reveal">
       <div class="eyebrow">Contato</div>
       <h2>Uma chamada profissional, simples e objetiva.</h2>
-      <p class="lead">
-        Estou aberto a conversas sobre backend, arquitetura de software,
-        APIs, sistemas internos e produtos que exigem base técnica sólida.
-      </p>
+        <p class="lead">
+          Estou aberto a conversas sobre tecnologia, engenharia de software,
+          produtos, pessoas e ideias que desafiam o modo como pensamos.
+        </p>
     </div>
 
     <div class="grid-2 reveal">
       <aside class="card">
         <div class="card-meta">availability / professional contact</div>
-        <h3>Vamos conversar sobre sistemas bem projetados.</h3>
-        <p>
-          Prefiro conversas objetivas, com contexto técnico, escopo claro
-          e problemas reais. Se o projeto envolve backend, dados,
-          integrações ou arquitetura, faz sentido conversar.
-        </p>
+        <h3>Vamos conversar? 🚀</h3>
+         <p>
+           Sou especialista em backend, mas gosto de entender o todo:
+           infraestrutura, produto, experiência e estratégia. Se você tem
+           uma ideia, um problema real ou quer trocar uma ideia sobre
+           tecnologia, bora conversar.
+         </p>
 
-        <div class="badge-row">
-          <span class="badge neutral">WhatsApp</span>
-          <span class="badge neutral">LinkedIn</span>
-          <span class="badge neutral">GitHub</span>
-          <span class="badge neutral">Email</span>
-        </div>
+         <div class="badge-row">
+           <span class="badge" style="border-color: rgba(103, 211, 145, 0.32); background: rgba(103, 211, 145, 0.1); color: #a7f3d0;">WhatsApp</span>
+           <span class="badge" style="border-color: rgba(92, 200, 255, 0.32); background: rgba(92, 200, 255, 0.1); color: #bdebff;">LinkedIn</span>
+           <span class="badge" style="border-color: rgba(244, 184, 96, 0.32); background: rgba(244, 184, 96, 0.1); color: #ffd99a;">GitHub</span>
+           <span class="badge" style="border-color: rgba(196, 181, 253, 0.32); background: rgba(196, 181, 253, 0.1); color: #ddd6fe;">Email</span>
+         </div>
 
         <a href="https://www.linkedin.com/in/siqgustavo/" class="external-link" target="_blank" rel="noopener noreferrer">
           Abrir LinkedIn ↗
