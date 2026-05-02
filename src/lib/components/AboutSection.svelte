@@ -14,12 +14,12 @@
         No fim, sou uma mistura de intensidade e leveza: penso bastante, gosto de aprender, valorizo boas conversas e tento levar para a vida um pouco dessa vontade de criar, descobrir e evoluir.
       </p>
 
-      <div style="display: flex; flex-direction: column; gap: 16px;">
+      <div style="display: flex; flex-direction: column; gap: 16px; max-width: 420px;">
         <article class="card" style="padding: 12px;">
           <div>
             <div class="card-meta" style="font-size: 0.65rem;">formação</div>
-            <h3 style="font-size: 0.95rem;">Formação</h3>
-            <p style="font-size: 0.8rem; line-height: 1.4;">
+            <h3 style="font-size: 1.05rem;">Formação</h3>
+            <p style="font-size: 0.88rem; line-height: 1.5;">
               <strong>Análise de Sistemas</strong><br />
               Monitoramento & Confiabilidade<br />
               Economia & Filosofia
@@ -35,8 +35,8 @@
         <article class="card" style="padding: 12px;">
           <div>
             <div class="card-meta" style="font-size: 0.65rem;">experiência</div>
-            <h3 style="font-size: 0.95rem;">Experiência</h3>
-            <p style="font-size: 0.78rem; line-height: 1.4;">
+            <h3 style="font-size: 1.05rem;">Experiência</h3>
+            <p style="font-size: 0.85rem; line-height: 1.5;">
               <strong>Backend</strong> (01/2026–Atual)<br />
               <strong>Backend</strong> (08/2025–12/2025)<br />
               <strong>Automação</strong> (02/2024–06/2025)<br />
