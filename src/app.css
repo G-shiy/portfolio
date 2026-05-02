@@ -30,8 +30,8 @@
   --radius-lg: 24px;
   --radius-xl: 32px;
 
-  --container: 1400px;
-  --container-wide: 1600px;
+  --container: 100%;
+  --container-wide: 100%;
 
   --shadow-soft: 0 24px 80px rgba(0, 0, 0, 0.32);
   --transition: 180ms ease;
@@ -305,12 +305,14 @@ textarea {
 }
 
 .container {
-  width: min(100% - 12px, var(--container));
+  width: var(--container);
+  padding: 0 24px;
   margin-inline: auto;
 }
 
 .wide {
-  width: min(100% - 12px, var(--container-wide));
+  width: var(--container-wide);
+  padding: 0 24px;
   margin-inline: auto;
 }
 
@@ -850,7 +852,7 @@ pre {
 @media (max-width: 560px) {
   .container,
   .wide {
-    width: min(100% - 8px, var(--container));
+    padding: 0 12px;
   }
   .metrics {
     grid-template-columns: 1fr;
