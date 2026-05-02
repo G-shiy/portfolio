@@ -14,7 +14,7 @@
         No fim, sou uma mistura de intensidade e leveza: penso bastante, gosto de aprender, valorizo boas conversas e tento levar para a vida um pouco dessa vontade de criar, descobrir e evoluir.
       </p>
 
-      <div style="display: flex; flex-direction: column; gap: 16px; max-width: 420px; margin-top: -18px;">
+      <div style="display: flex; flex-direction: column; gap: 16px; max-width: 420px; margin-top: -24px;">
         <article class="card" style="padding: 12px;">
           <div>
             <div class="card-meta" style="font-size: 0.65rem;">formação</div>
