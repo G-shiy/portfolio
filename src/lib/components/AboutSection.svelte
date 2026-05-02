@@ -12,23 +12,25 @@
   style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 80px; align-items: start;"
 >
       <div>
-        <p
-          style="font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary); margin: 0; padding-top: 12px;"
-        >
-          Olá, me chamo Gustavo, tenho 22 anos. Sou alguém curioso por natureza,
-          que gosta de entender as coisas com profundidade, mas sem perder o bom
-          humor no processo.
-          <br /><br />
-          Gosto de tecnologia, RPG, anime, perfumes e de tudo que carrega um pouco
-          de personalidade, seja um teclado retrô, uma boa história ou uma ideia diferente
-          que prende minha atenção. Tenho facilidade em me envolver com aquilo que
-          desperta minha curiosidade e gosto de transformar interesses simples em
-          algo com significado.
-          <br /><br />
-          No fim, sou uma mistura de intensidade e leveza: penso bastante, gosto de
-          aprender, valorizo boas conversas e tento levar para a vida um pouco dessa
-          vontade de criar, descobrir e evoluir.
-        </p>
+          <p
+            style="font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary); margin: 0; padding-top: 12px;"
+          >
+            Olá, me chamo Gustavo, tenho 22 anos. Sou alguém curioso por natureza,
+            que gosta de entender as coisas com profundidade, mas sem perder o bom
+            humor no processo.
+            <br /><br />
+            Gosto de tecnologia, RPG, anime, perfumes e de tudo que carrega um pouco
+            de personalidade, seja um teclado retrô, uma boa história ou uma ideia
+            diferente que prende minha atenção. Tenho facilidade em me envolver
+            com aquilo que desperta minha curiosidade e gosto de transformar
+            interesses simples em algo com significado. Tenho grande interesse por
+            filosofia e economia, além de valorizar monitoramento, auditoria e
+            confiabilidade em sistemas.
+            <br /><br />
+            No fim, sou uma mistura de intensidade e leveza: penso bastante, gosto
+            de aprender, valorizo boas conversas e tento levar para a vida um
+            pouco dessa vontade de criar, descobrir e evoluir.
+          </p>
 
         <div
           class="callout"
@@ -59,21 +61,15 @@
           </div>
           <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 10px;">
             <strong>Análise de Sistemas</strong><br />
-            Monitoramento & Confiabilidade<br />
-            Economia & Filosofia
+            [FACULDADE]<br />
+            [INÍCIO] - [TÉRMINO]
           </p>
           <div class="badge-row" style="gap: 5px;">
-            <span class="badge go" style="font-size: 0.65rem; padding: 3px 7px;"
-              >Go</span
-            >
-            <span
-              class="badge database"
-              style="font-size: 0.65rem; padding: 3px 7px;">PostgreSQL</span
-            >
-            <span
-              class="badge infrastructure"
-              style="font-size: 0.65rem; padding: 3px 7px;">Docker</span
-            >
+            <span class="badge java" style="font-size: 0.65rem; padding: 3px 7px;">Java</span>
+            <span class="badge" style="font-size: 0.65rem; padding: 3px 7px; border-color: rgba(156, 39, 176, 0.32); background: rgba(156, 39, 176, 0.1); color: #e1bee7;">C#</span>
+            <span class="badge database" style="font-size: 0.65rem; padding: 3px 7px;">OracleSQL</span>
+            <span class="badge database" style="font-size: 0.65rem; padding: 3px 7px;">MongoDB</span>
+            <span class="badge infrastructure" style="font-size: 0.65rem; padding: 3px 7px;">Kubernetes</span>
           </div>
         </article>
 
@@ -91,7 +87,8 @@
             <strong>Crediclass</strong> (01/2026–Atual)<br />
             <strong>Curva</strong> (08/2025–12/2025)<br />
             <strong>Golden Tulip</strong> (02/2024–06/2025)<br />
-            <strong>Exército Brasileiro</strong> (03/2023–02/2024)
+            <strong>Exército Brasileiro</strong> (03/2023–02/2024)<br />
+            <strong>[5ª EMPRESA]</strong> ([PERÍODO])
           </p>
           <div class="badge-row" style="gap: 5px;">
             <span class="badge go" style="font-size: 0.65rem; padding: 3px 7px;"
