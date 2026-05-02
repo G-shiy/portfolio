@@ -14,36 +14,44 @@
         No fim, sou uma mistura de intensidade e leveza: penso bastante, gosto de aprender, valorizo boas conversas e tento levar para a vida um pouco dessa vontade de criar, descobrir e evoluir.
       </p>
 
+      <div class="callout" style="margin-top: 24px; font-size: 0.88rem; border-left: 3px solid var(--primary);">
+        <div style="font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary);">
+          "Quem comtempla se torna consciente. Quem age, se torna livre." — <strong>Goethe</strong>
+        </div>
+      </div>
+
       <div style="display: flex; flex-direction: column; gap: 16px; max-width: 340px; margin-top: -24px;">
-        <article class="card" style="padding: 12px;">
+        <article class="card" style="padding: 16px;">
           <div>
+            <div style="font-size: 1.3rem; margin-bottom: 8px;">🎓</div>
             <div class="card-meta" style="font-size: 0.65rem;">formação</div>
             <h3 style="font-size: 1.05rem;">Formação</h3>
-            <p style="font-size: 0.88rem; line-height: 1.5;">
+            <p style="font-size: 0.85rem; line-height: 1.5;">
               <strong>Análise de Sistemas</strong><br />
               Monitoramento & Confiabilidade<br />
               Economia & Filosofia
             </p>
           </div>
-          <div class="badge-row" style="margin-top: 8px; gap: 5px;">
+          <div class="badge-row" style="margin-top: 10px; gap: 5px;">
             <span class="badge neutral" style="font-size: 0.62rem; padding: 3px 6px;">Go</span>
             <span class="badge neutral" style="font-size: 0.62rem; padding: 3px 6px;">PostgreSQL</span>
             <span class="badge neutral" style="font-size: 0.62rem; padding: 3px 6px;">Docker</span>
           </div>
         </article>
 
-        <article class="card" style="padding: 12px;">
+        <article class="card" style="padding: 16px;">
           <div>
+            <div style="font-size: 1.3rem; margin-bottom: 8px;">💼</div>
             <div class="card-meta" style="font-size: 0.65rem;">experiência</div>
             <h3 style="font-size: 1.05rem;">Experiência</h3>
-            <p style="font-size: 0.85rem; line-height: 1.5;">
+            <p style="font-size: 0.82rem; line-height: 1.5;">
               <strong>Crediclass</strong> (01/2026–Atual)<br />
               <strong>Curva</strong> (08/2025–12/2025)<br />
               <strong>Golden Tulip</strong> (02/2024–06/2025)<br />
               <strong>Exército Brasileiro</strong> (03/2023–02/2024)
             </p>
           </div>
-          <div class="badge-row" style="margin-top: 8px; gap: 5px;">
+          <div class="badge-row" style="margin-top: 10px; gap: 5px;">
             <span class="badge" style="font-size: 0.62rem; padding: 3px 6px;">Go</span>
             <span class="badge" style="font-size: 0.62rem; padding: 3px 6px;">Java</span>
             <span class="badge accent" style="font-size: 0.62rem; padding: 3px 6px;">System Design</span>
@@ -60,7 +68,8 @@
       grid-template-columns: 1fr !important;
     }
     div[style*="display: flex; flex-direction: column;"] {
-      margin-top: 24px;
+      margin-top: 24px !important;
+      max-width: 100% !important;
     }
   }
 </style>
