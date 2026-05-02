@@ -37,10 +37,10 @@
             <div class="card-meta" style="font-size: 0.65rem;">experiência</div>
             <h3 style="font-size: 1.05rem;">Experiência</h3>
             <p style="font-size: 0.85rem; line-height: 1.5;">
-              <strong>Backend</strong> (01/2026–Atual)<br />
-              <strong>Backend</strong> (08/2025–12/2025)<br />
-              <strong>Automação</strong> (02/2024–06/2025)<br />
-              <strong>Comunicações</strong> (03/2023–02/2024)
+              <strong>Crediclass</strong> (01/2026–Atual)<br />
+              <strong>Curva</strong> (08/2025–12/2025)<br />
+              <strong>Golden Tulip</strong> (02/2024–06/2025)<br />
+              <strong>Exército Brasileiro</strong> (03/2023–02/2024)
             </p>
           </div>
           <div class="badge-row" style="margin-top: 8px; gap: 5px;">
