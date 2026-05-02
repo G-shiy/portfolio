@@ -45,15 +45,56 @@
           </div>
         </div>
 
-        <div style="margin-top: 24px;">
-          <h4 style="font-size: 1rem; margin-bottom: 12px; color: var(--text);">Leituras Fundamentais</h4>
-          <ul style="font-size: 0.85rem; line-height: 1.6; color: var(--text-secondary); padding-left: 20px;">
-            <li>Entendendo Algoritmos - Aditya Y. Bhargava</li>
-            <li>Engenharia de Software: Conceitos e Práticas – Raul Sidnei Wazlawick</li>
-            <li>The Art of Computer Programming (Volume 1) – Donald E. Knuth</li>
-            <li>Arquitetura e Organização de Computadores – William Stallings</li>
-            <li>Clean Code – Robert C. Martin</li>
-          </ul>
+        <div class="card" style="margin-top: 24px; border-left: 3px solid var(--accent); background: linear-gradient(135deg, rgba(244, 184, 96, 0.08), transparent); box-shadow: 0 4px 20px rgba(244, 184, 96, 0.1);">
+          <div style="font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary);">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
+              <div style="font-size: 1.4rem;">📚</div>
+              <div>
+                <h3 style="font-size: 1.05rem; margin: 0;">Leituras Fundamentais</h3>
+                <div style="font-size: 0.7rem; color: var(--text-muted); margin-top: 2px;">Livros que li e fundamentam minha base técnica</div>
+              </div>
+            </div>
+            <p style="font-size: 0.88rem; margin-bottom: 16px; line-height: 1.6;">
+              Cada leitura moldou minha forma de pensar código, arquitetura e engenharia de software. São referências que consulto e recomendo.
+            </p>
+            <ul style="padding-left: 0; margin: 0; list-style: none; display: flex; flex-direction: column; gap: 10px;">
+              <li style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.85rem;">
+                <span style="color: var(--accent); margin-top: 2px;">📖</span>
+                <div>
+                  <strong>Entendendo Algoritmos</strong> - Aditya Y. Bhargava
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Base sólida em estruturas de dados e algoritmos</div>
+                </div>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.85rem;">
+                <span style="color: var(--accent); margin-top: 2px;">📖</span>
+                <div>
+                  <strong>Engenharia de Software: Conceitos e Práticas</strong> – Raul Sidnei Wazlawick
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Fundamentos de processos e padrões de software</div>
+                </div>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.85rem;">
+                <span style="color: var(--accent); margin-top: 2px;">📖</span>
+                <div>
+                  <strong>The Art of Computer Programming (Volume 1)</strong> – Donald E. Knuth
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Obra clássica da ciência da computação</div>
+                </div>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.85rem;">
+                <span style="color: var(--accent); margin-top: 2px;">📖</span>
+                <div>
+                  <strong>Arquitetura e Organização de Computadores</strong> – William Stallings
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Base em hardware e organização de sistemas</div>
+                </div>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.85rem;">
+                <span style="color: var(--accent); margin-top: 2px;">📖</span>
+                <div>
+                  <strong>Clean Code</strong> – Robert C. Martin
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Essencial para qualidade e manutenção de código</div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -70,17 +111,11 @@
             <div style="font-size: 1.3rem;">🎓</div>
             <h3 style="font-size: 1.05rem; margin: 0;">Formação</h3>
           </div>
-          <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 10px;">
+          <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 1px;">
             <strong>Análise de Sistemas</strong><br />
             Faculdade de Informática e Administração - FIAP<br />
             São Paulo, SP<br />
             08/2024 - 08/2026 (previsão)
-          </p>
-          <p style="font-size: 0.8rem; line-height: 1.4; color: var(--text-muted); margin-bottom: 10px;">
-            <strong>Ensino Médio Técnico</strong><br />
-            Instituto Máximus Ribeiro Goulart<br />
-            São José dos Campos, SP<br />
-            02/2019 - 12/2021
           </p>
           <div class="badge-row" style="gap: 5px;">
             <span class="badge java" style="font-size: 0.65rem; padding: 3px 7px;">Java</span>
