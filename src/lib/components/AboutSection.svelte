@@ -1,6 +1,6 @@
 <section id="sobre" class="section" style="padding: 48px 0;">
   <div class="container">
-    <div class="section-header reveal" style="margin-bottom: 48px;">
+    <div class="section-header reveal" style="margin-bottom: 12px;">
       <div class="eyebrow" style="font-size: 1.0rem;">Sobre mim</div>
       <h2 style="font-size: clamp(1.6rem, 3vw, 2.2rem);">
         Resumo profissional
@@ -9,11 +9,11 @@
 
 <div
   class="reveal"
-  style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 80px; align-items: start;"
+  style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 120px; align-items: start;"
 >
       <div>
           <p
-            style="font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary); margin: 0; padding-top: 12px;"
+            style="font-size: 0.98rem; line-height: 1.7; color: var(--text-secondary); margin: 0; padding-top: 12px;"
           >
             Olá, me chamo Gustavo, tenho 22 anos. Sou alguém curioso por natureza,
             que gosta de entender as coisas com profundidade, mas sem perder o bom
@@ -47,7 +47,7 @@
         </div>
 
         <div
-          style="display: flex; flex-direction: column; gap: 16px; max-width: 400px; margin-top: -24px;"
+          style="display: flex; flex-direction: column; gap: 20px; max-width: 400px; margin-top: -24px;"
         >
           <article
             class="card"
@@ -59,7 +59,7 @@
               <div style="font-size: 1.3rem;">🎓</div>
               <h3 style="font-size: 1.05rem; margin: 0;">Formação</h3>
             </div>
-            <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 10px;">
+            <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 0px;">
               <strong>Análise de Sistemas</strong><br />
               Faculdade de Informática e Administração - FIAP<br />
               São Paulo, SP<br />
@@ -85,7 +85,7 @@
               <div style="font-size: 1.3rem;">💼</div>
               <h3 style="font-size: 1.05rem; margin: 0;">Experiência</h3>
             </div>
-            <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 10px;">
+            <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 0px;">
               <strong>Crediclass</strong> (01/2026–Atual)<br />
               <strong>Rawlings Foundation</strong> (02/2026–Atual)<br />
               <strong>Curva</strong> (08/2025–12/2025)<br />
