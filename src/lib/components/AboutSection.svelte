@@ -1,6 +1,6 @@
 <section id="sobre" class="section" style="padding: 48px 0;">
   <div class="container">
-    <div class="section-header reveal" style="margin-bottom: 24px;">
+    <div class="section-header reveal" style="margin-bottom: 48px;">
       <div class="eyebrow" style="font-size: 1.0rem;">Sobre mim</div>
       <h2 style="font-size: clamp(1.6rem, 3vw, 2.2rem);">
         Resumo profissional
