@@ -3,16 +3,16 @@
     {
       title: 'Sistema de Gestão de Comissões',
       meta: 'featured / backend architecture',
-      description: 'Sistema completo de gerenciamento de comissões arquitetado do zero. Go + Gin (RESTful API), HTMX + Templ (13 telas type-safe), PostgreSQL com SQLC. Clean Architecture (Handler → Service → Repository), JWT auth, Zap logging, Viper config, Goose migrations.',
+      description: 'Sistema de gestão de comissões com Go, Gin, HTMX e Templ. Clean Architecture, JWT auth, logging estruturado e migrations automatizadas.',
       tech: ['Go', 'Gin', 'HTMX', 'Templ', 'PostgreSQL', 'SQLC'],
-      techAccent: ['Clean Architecture', 'JWT', 'Docker', 'OWASP/LGPD', 'Idempotency', 'Zap Logger'],
+      techAccent: ['Clean Architecture', 'JWT', 'Docker', 'OWASP/LGPD', 'Idempotency'],
       link: '#',
       featured: true
     },
     {
       title: 'Sistema de Autenticação e Auditoria',
       meta: 'security / api',
-      description: 'API com Spring Security/JWT, Proof-of-Possession e modelo granular de roles. Sistema de auditoria unificado, otimização JSON reduzindo build em 43%. Conformidade LGPD/GDPR.',
+      description: 'API com Spring Security/JWT, Proof-of-Possession e modelo granular de roles. Auditoria unificada e conformidade LGPD/GDPR.',
       tech: ['Java', 'Spring Boot', 'Spring Security', 'PostgreSQL', 'AWS S3'],
       techAccent: ['JWT', 'Zap Logger', 'Migrations', 'LGPD'],
       link: '#'
@@ -20,23 +20,23 @@
     {
       title: 'Microsserviço de Notificações',
       meta: 'stack / infrastructure',
-      description: 'Serviço assíncrono com filas internas e processamento concorrente. Estrutura completa de observabilidade com métricas (Prometheus) e dashboards (Grafana). 25% redução no MTTR.',
+      description: 'Serviço assíncrono com filas internas e processamento concorrente. Observabilidade com métricas e dashboards integrados.',
       tech: ['Go', 'MongoDB'],
-      techAccent: ['Prometheus', 'Grafana', 'Observability', 'Async Processing'],
+      techAccent: ['Prometheus', 'Grafana', 'Observability'],
       link: '#'
     },
     {
       title: 'Sistema Financeiro Interno',
       meta: 'tool / data',
-      description: 'Sistema completo (Python/Flask + React) para conciliação, fluxo de caixa e relatórios. Automação de conciliações bancárias, controle de inadimplência com detecção automática. 75% redução no tempo de fechamento.',
+      description: 'Sistema completo para conciliação, fluxo de caixa e relatórios. Automação de conciliações bancárias e controle de inadimplência.',
       tech: ['Python', 'Flask', 'React', 'Pandas', 'Selenium'],
-      techAccent: ['Automation', 'Financial Reports', 'Bank Reconciliation'],
+      techAccent: ['Automation', 'Financial Reports'],
       link: '#'
     },
     {
       title: 'Fintech Bank',
       meta: 'universitário / fintech',
-      description: 'Plataforma simulando operações bancárias com idempotência, transações ACID, testes unitários (JUnit + Mockito) e autenticação JWT. 100% cobertura de testes.',
+      description: 'Plataforma simulando operações bancárias com idempotência, transações ACID, testes unitários e autenticação JWT.',
       tech: ['Java', 'Spring Boot', 'OracleSQL'],
       techAccent: ['JUnit', 'Mockito', 'ACID', 'Idempotency'],
       link: '#'
@@ -44,7 +44,7 @@
     {
       title: 'Sistema ESG',
       meta: 'universitário / logistics',
-      description: 'Plataforma de logística de coleta de lixo com controle de pontos, métricas de resíduos, dashboard e requisições de coleta pelo usuário. Gestão ambiental integrada.',
+      description: 'Plataforma de logística de coleta de lixo com controle de pontos, métricas de resíduos e dashboard integrado.',
       tech: ['Java', 'C#', 'OracleSQL', 'React'],
       techAccent: ['Environmental', 'Dashboard', 'Logistics'],
       link: '#'
@@ -52,35 +52,32 @@
   ];
 </script>
 
-<section id="projetos" class="section">
+<section id="projetos" class="section" style="padding: 48px 0;">
   <div class="container">
-    <div class="section-header reveal">
+    <div class="section-header reveal" style="margin-bottom: 24px;">
       <div class="eyebrow">Projetos</div>
-      <h2>Superfícies discretas para organizar informação técnica.</h2>
-      <p class="lead">
-        Projetos que mostram problema, arquitetura, trade-offs, regras de negócio e impacto.
-      </p>
+      <h2 style="font-size: clamp(1.6rem, 3vw, 2.2rem);">Experiência técnica</h2>
     </div>
 
-    <div class="grid-3 reveal">
+    <div class="grid-3 reveal" style="gap: 20px;">
       {#each projects as project}
-        <article class="card" class:featured-card={project.featured}>
+        <article class="card" class:featured-card={project.featured} style="padding: 22px;">
           <div>
-            <div class="card-meta">{project.meta}</div>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
+            <div class="card-meta" style="font-size: 0.7rem;">{project.meta}</div>
+            <h3 style="font-size: 1.1rem;">{project.title}</h3>
+            <p style="font-size: 0.88rem; line-height: 1.6;">{project.description}</p>
 
-            <div class="badge-row">
+            <div class="badge-row" style="margin-top: 14px; gap: 6px;">
               {#each project.tech as tech}
-                <span class="badge neutral">{tech}</span>
+                <span class="badge neutral" style="font-size: 0.68rem; padding: 5px 8px;">{tech}</span>
               {/each}
               {#each project.techAccent as tech}
-                <span class="badge accent">{tech}</span>
+                <span class="badge accent" style="font-size: 0.68rem; padding: 5px 8px;">{tech}</span>
               {/each}
             </div>
           </div>
 
-          <a href={project.link} class="external-link">Ver projeto ↗</a>
+          <a href={project.link} class="external-link" style="margin-top: 14px; font-size: 0.85rem;">Ver projeto ↗</a>
         </article>
       {/each}
     </div>

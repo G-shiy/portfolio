@@ -17,8 +17,8 @@
 <nav>
   <div class="container nav-inner">
     <a href="{base}/" class="brand" aria-label="Página inicial">
-      <span class="brand-mark">λ</span>
-      <span>Backend.Systems</span>
+      <span class="brand-mark">GS</span>
+      <span>Gustavo Siqueira</span>
     </a>
 
     <button class="hamburger" class:active={mobileMenuOpen} on:click={toggleMobileMenu} aria-label="Menu">
@@ -87,7 +87,9 @@
       linear-gradient(135deg, rgba(92, 200, 255, 0.16), rgba(244, 184, 96, 0.08)),
       var(--surface);
     color: var(--primary);
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
     box-shadow: 0 0 30px rgba(92, 200, 255, 0.08);
   }
 

@@ -1,59 +1,43 @@
-<section id="sobre" class="section">
+<section id="sobre" class="section" style="padding: 48px 0;">
   <div class="container">
-    <div class="section-header reveal">
+    <div class="section-header reveal" style="margin-bottom: 24px;">
       <div class="eyebrow">Sobre mim</div>
-      <h2>Desenvolvedor backend focado em arquitetura e clareza.</h2>
-      <p class="lead">
-        Olá! Me chamo Gustavo, tenho 22 anos e atuo como desenvolvedor backend,
-        atualmente prestando serviços de consultoria e desenvolvimento de software.
-        Possuo foco em Golang, mas tenho experiências com Python Flask, Java Spring, Svelte e React.
-      </p>
+      <h2 style="font-size: clamp(1.6rem, 3vw, 2.2rem);">Resumo profissional</h2>
     </div>
 
-    <div class="grid-2 reveal">
-      <article class="card">
-        <div class="card-meta">background / education</div>
-        <h3>Formação e foco</h3>
-        <p>
-          <strong>Systems Analysis</strong><br />
+    <div class="grid-2 reveal" style="gap: 20px;">
+      <article class="card" style="padding: 24px;">
+        <div class="card-meta">formação</div>
+        <h3 style="font-size: 1.15rem;">Formação e competências</h3>
+        <p style="font-size: 0.9rem; line-height: 1.6;">
+          <strong>Análise de Sistemas</strong><br />
           Monitoramento & Confiabilidade<br />
           Economia & Filosofia
         </p>
-        <div class="badge-row">
-          <span class="badge neutral">Go</span>
-          <span class="badge neutral">PostgreSQL</span>
-          <span class="badge neutral">Docker</span>
-          <span class="badge neutral">Linux</span>
+        <div class="badge-row" style="margin-top: 14px;">
+          <span class="badge neutral" style="font-size: 0.68rem;">Go</span>
+          <span class="badge neutral" style="font-size: 0.68rem;">PostgreSQL</span>
+          <span class="badge neutral" style="font-size: 0.68rem;">Docker</span>
+          <span class="badge neutral" style="font-size: 0.68rem;">Linux</span>
         </div>
       </article>
 
-      <article class="card">
-        <div class="card-meta">experience / companies</div>
-        <h3>Experiência profissional</h3>
-        <p>
+      <article class="card" style="padding: 24px;">
+        <div class="card-meta">experiência</div>
+        <h3 style="font-size: 1.15rem;">Histórico profissional</h3>
+        <p style="font-size: 0.85rem; line-height: 1.7;">
           <strong>Desenvolvedor Backend</strong> (01/2026–Atual)<br />
           <strong>Desenvolvedor Backend</strong> (08/2025–12/2025)<br />
           <strong>Automação Financeira</strong> (02/2024–06/2025)<br />
-          <strong>Comunicações</strong> (03/2023–02/2024)<br />
-          <span style="font-size: 0.9rem; color: var(--text-secondary);">
-            Sistemas internos com JavaFX, Spring Boot e Docker. Automação de escalas, restauração de servidor Samba.
-          </span>
+          <strong>Comunicações</strong> (03/2023–02/2024)
         </p>
-        <div class="badge-row">
-          <span class="badge">Go</span>
-          <span class="badge">Java</span>
-          <span class="badge accent">System Design</span>
-          <span class="badge accent">Observability</span>
+        <div class="badge-row" style="margin-top: 14px;">
+          <span class="badge" style="font-size: 0.68rem;">Go</span>
+          <span class="badge" style="font-size: 0.68rem;">Java</span>
+          <span class="badge accent" style="font-size: 0.68rem;">System Design</span>
+          <span class="badge accent" style="font-size: 0.68rem;">Observability</span>
         </div>
       </article>
     </div>
   </div>
 </section>
-
-<style>
-  @media (max-width: 900px) {
-    .grid-2 {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
