@@ -21,7 +21,7 @@
       </div>
 
       <div style="display: flex; flex-direction: column; gap: 16px; max-width: 340px; margin-top: -24px;">
-        <article class="card" style="padding: 16px;">
+        <article class="card" style="padding: 16px; border-left: 3px solid var(--primary); background: linear-gradient(135deg, rgba(92, 200, 255, 0.08), transparent); box-shadow: 0 4px 20px rgba(92, 200, 255, 0.1);">
           <div>
             <div style="font-size: 1.3rem; margin-bottom: 8px;">🎓</div>
             <div class="card-meta" style="font-size: 0.65rem;">formação</div>
@@ -39,7 +39,7 @@
           </div>
         </article>
 
-        <article class="card" style="padding: 16px;">
+        <article class="card" style="padding: 16px; border-left: 3px solid var(--accent); background: linear-gradient(135deg, rgba(244, 184, 96, 0.08), transparent); box-shadow: 0 4px 20px rgba(244, 184, 96, 0.1);">
           <div>
             <div style="font-size: 1.3rem; margin-bottom: 8px;">💼</div>
             <div class="card-meta" style="font-size: 0.65rem;">experiência</div>
