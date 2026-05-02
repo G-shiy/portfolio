@@ -3,7 +3,7 @@
     {
       title: 'Sistema de Gestão de Comissões',
       meta: 'featured / backend architecture',
-      description: 'Sistema completo de gerenciamento de comissões arquitetado do zero. Go + Gin (RESTful API), HTMX + Templ (13 telas type-safe), PostgreSQL com SQLC. Clean Architecture (Handler → Service → Repository), JWT auth, Zap logging, Viper config, Goose migrations. Cálculo: Receita Bruta → Imposto → Receita Líquida → Comissão Parceiro/Consultor.',
+      description: 'Sistema completo de gerenciamento de comissões arquitetado do zero. Go + Gin (RESTful API), HTMX + Templ (13 telas type-safe), PostgreSQL com SQLC. Clean Architecture (Handler → Service → Repository), JWT auth, Zap logging, Viper config, Goose migrations.',
       tech: ['Go', 'Gin', 'HTMX', 'Templ', 'PostgreSQL', 'SQLC'],
       techAccent: ['Clean Architecture', 'JWT', 'Docker', 'OWASP/LGPD', 'Idempotency', 'Zap Logger'],
       link: '#',
@@ -11,7 +11,7 @@
     },
     {
       title: 'Sistema de Autenticação e Auditoria',
-      meta: 'Curva / api platform',
+      meta: 'Curva / security / api',
       description: 'API com Spring Security/JWT, Proof-of-Possession e modelo granular de roles. Sistema de auditoria unificado, otimização JSON reduzindo build em 43%. Conformidade LGPD/GDPR.',
       tech: ['Java', 'Spring Boot', 'Spring Security', 'PostgreSQL', 'AWS S3'],
       techAccent: ['JWT', 'Zap Logger', 'Migrations', 'LGPD'],
@@ -27,7 +27,7 @@
     },
     {
       title: 'Sistema Financeiro Interno',
-      meta: 'Golden Tulip / data',
+      meta: 'Golden Tulip / tool / data',
       description: 'Sistema completo (Python/Flask + React) para conciliação, fluxo de caixa e relatórios. Automação de conciliações bancárias, controle de inadimplência com detecção automática. 75% redução no tempo de fechamento.',
       tech: ['Python', 'Flask', 'React', 'Pandas', 'Selenium'],
       techAccent: ['Automation', 'Financial Reports', 'Bank Reconciliation'],
