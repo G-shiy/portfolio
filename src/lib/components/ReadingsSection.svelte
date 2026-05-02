@@ -2,57 +2,55 @@
   <div class="container">
     <div class="section-header reveal" style="margin-bottom: 24px;">
       <div class="eyebrow" style="font-size: 0.7rem;">Leituras</div>
-      <h2 style="font-size: clamp(1.6rem, 3vw, 2.2rem);">Leituras Fundamentais</h2>
+      <h2 style="font-size: clamp(1.6rem, 3vw, 2.2rem);">Minha Biblioteca Técnica</h2>
       <p class="lead" style="font-size: clamp(1.05rem, 2vw, 1.25rem); line-height: 1.75;">
-        Livros que li e que fundamentam minha base técnica, filosófica e formação como desenvolvedor.
+        Livros que moldaram meu pensamento. Cada um deixou uma marca na forma como vejo código, arquitetura e engenharia.
       </p>
     </div>
 
-    <div class="card reveal" style="padding: 24px; border-left: 3px solid var(--accent); background: linear-gradient(135deg, rgba(244, 184, 96, 0.08), transparent); box-shadow: 0 4px 20px rgba(244, 184, 96, 0.1);">
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;">
-        <div style="display: flex; align-items: flex-start; gap: 10px;">
-          <span style="font-size: 1.2rem;">📖</span>
-          <div>
-            <strong style="font-size: 0.9rem;">Entendendo Algoritmos</strong>
-            <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;">Aditya Y. Bhargava</div>
-            <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 2px;">Base sólida em estruturas de dados</div>
-          </div>
+    <div class="readings-grid reveal">
+      <div class="reading-card">
+        <div class="reading-icon">📐</div>
+        <div class="reading-content">
+          <strong class="reading-title">Entendendo Algoritmos</strong>
+          <span class="reading-author">Aditya Y. Bhargava</span>
+          <p class="reading-desc">Abasei minha lógica e pensamento algorítmico. Leitura que transformou minha forma de resolver problemas.</p>
         </div>
+      </div>
 
-        <div style="display: flex; align-items: flex-start; gap: 10px;">
-          <span style="font-size: 1.2rem;">📖</span>
-          <div>
-            <strong style="font-size: 0.9rem;">Engenharia de Software</strong>
-            <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;">Raul Sidnei Wazlawick</div>
-            <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 2px;">Conceitos e práticas essenciais</div>
-          </div>
+      <div class="reading-card">
+        <div class="reading-icon">📘</div>
+        <div class="reading-content">
+          <strong class="reading-title">Engenharia de Software</strong>
+          <span class="reading-author">Raul Sidnei Wazlawick</span>
+          <p class="reading-desc">Conceitos fundamentais que aplico até hoje em análise e design de sistemas.</p>
         </div>
+      </div>
 
-        <div style="display: flex; align-items: flex-start; gap: 10px;">
-          <span style="font-size: 1.2rem;">📖</span>
-          <div>
-            <strong style="font-size: 0.9rem;">The Art of Computer Programming</strong>
-            <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;">Donald E. Knuth (Vol. 1)</div>
-            <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 2px;">Obra clássica da ciência da computação</div>
-          </div>
+      <div class="reading-card">
+        <div class="reading-icon">📚</div>
+        <div class="reading-content">
+          <strong class="reading-title">The Art of Computer Programming</strong>
+          <span class="reading-author">Donald E. Knuth (Vol. 1)</span>
+          <p class="reading-desc">A obra definitiva. Me ensinou rigor matemático e precisão em algoritmos.</p>
         </div>
+      </div>
 
-        <div style="display: flex; align-items: flex-start; gap: 10px;">
-          <span style="font-size: 1.2rem;">📖</span>
-          <div>
-            <strong style="font-size: 0.9rem;">Arquitetura e Organização de Computadores</strong>
-            <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;">William Stallings</div>
-            <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 2px;">Base em hardware e sistemas</div>
-          </div>
+      <div class="reading-card">
+        <div class="reading-icon">💻</div>
+        <div class="reading-content">
+          <strong class="reading-title">Arquitetura e Organização de Computadores</strong>
+          <span class="reading-author">William Stallings</span>
+          <p class="reading-desc">Entender o hardware mudou minha perspectiva sobre performance e otimização.</p>
         </div>
+      </div>
 
-        <div style="display: flex; align-items: flex-start; gap: 10px;">
-          <span style="font-size: 1.2rem;">📖</span>
-          <div>
-            <strong style="font-size: 0.9rem;">Clean Code</strong>
-            <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;">Robert C. Martin</div>
-            <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 2px;">Essencial para qualidade de código</div>
-          </div>
+      <div class="reading-card">
+        <div class="reading-icon">✨</div>
+        <div class="reading-content">
+          <strong class="reading-title">Clean Code</strong>
+          <span class="reading-author">Robert C. Martin</span>
+          <p class="reading-desc">Fundamental para escrever código limpo, manutenível e profissional.</p>
         </div>
       </div>
     </div>
@@ -60,9 +58,66 @@
 </section>
 
 <style>
+  .readings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+  }
+
+  .reading-card {
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: rgba(16, 24, 33, 0.88);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+    border-left: 3px solid var(--accent);
+  }
+
+  .reading-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    background: rgba(20, 31, 42, 0.92);
+  }
+
+  .reading-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .reading-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .reading-title {
+    font-size: 0.95rem;
+    color: var(--text);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .reading-author {
+    font-size: 0.78rem;
+    color: var(--accent);
+    font-family: "JetBrains Mono", monospace;
+  }
+
+  .reading-desc {
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    margin: 0;
+  }
+
   @media (max-width: 900px) {
-    div[style*="grid-template-columns: repeat(auto-fill"] {
-      grid-template-columns: 1fr !important;
+    .readings-grid {
+      grid-template-columns: 1fr;
     }
   }
 </style>

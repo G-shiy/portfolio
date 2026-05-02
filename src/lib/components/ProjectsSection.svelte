@@ -109,39 +109,38 @@
       </h2>
     </div>
 
-    <div class="grid-3 reveal" style="gap: 20px;">
+    <div class="grid-3 reveal" style="gap: 40px;">
       {#each projects as project}
-        <article class="card" style="padding: 22px;">
-          <div>
+        <article class="project-card">
+          <div class="project-header">
             <div class="card-meta" style="font-size: 0.7rem;">
               {project.meta}
             </div>
             <h3 style="font-size: 1.1rem;">{project.title}</h3>
-            <p style="font-size: 0.88rem; line-height: 1.6;">
-              {project.description}
-            </p>
+          </div>
+          <p style="font-size: 0.88rem; line-height: 1.6; flex: 1;">
+            {project.description}
+          </p>
 
-            <div class="badge-row" style="margin-top: 14px; gap: 6px;">
-              {#each project.tech as tech}
-                <span
-                  class="badge {getBadgeClass(tech)}"
-                  style="font-size: 0.68rem; padding: 5px 8px;">{tech}</span
-                >
-              {/each}
-              {#each project.techAccent as tech}
-                <span
-                  class="badge {getBadgeClass(tech)}"
-                  style="font-size: 0.68rem; padding: 5px 8px;">{tech}</span
-                >
-              {/each}
-            </div>
+          <div class="badge-row" style="gap: 6px; margin-top: auto;">
+            {#each project.tech as tech}
+              <span
+                class="badge {getBadgeClass(tech)}"
+                style="font-size: 0.68rem; padding: 5px 8px;">{tech}</span>
+              >
+            {/each}
+            {#each project.techAccent as tech}
+              <span
+                class="badge {getBadgeClass(tech)}"
+                style="font-size: 0.68rem; padding: 5px 8px;">{tech}</span>
+              >
+            {/each}
           </div>
 
           <a
             href={project.link}
             class="external-link"
-            style="margin-top: 14px; font-size: 0.85rem;">Ver projeto ↗</a
-          >
+            style="margin-top: 16px; font-size: 0.85rem;">Ver projeto ↗</a>
         </article>
       {/each}
     </div>
@@ -149,6 +148,51 @@
 </section>
 
 <style>
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.028), transparent),
+      rgba(16, 24, 33, 0.88);
+    transition: var(--transition);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    position: relative;
+  }
+
+  .project-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    opacity: 0;
+    transition: var(--transition);
+  }
+
+  .project-card:hover::before {
+    opacity: 1;
+  }
+
+  .project-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--primary-border);
+    background: rgba(20, 31, 42, 0.92);
+  }
+
+  .project-header {
+    margin-bottom: 14px;
+  }
+
+  .project-card h3 {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+
   @media (max-width: 900px) {
     .grid-3 {
       grid-template-columns: 1fr;
