@@ -7,10 +7,10 @@
       </h2>
     </div>
 
-    <div
-      class="reveal"
-      style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: start;"
-    >
+<div
+  class="reveal"
+  style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 80px; align-items: start;"
+>
       <div>
         <p
           style="font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary); margin: 0; padding-top: 12px;"
