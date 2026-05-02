@@ -5,7 +5,7 @@
       <h2 style="font-size: clamp(1.6rem, 3vw, 2.2rem);">Resumo profissional</h2>
     </div>
 
-    <div class="reveal" style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 24px; align-items: start;">
+     <div class="reveal" style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: start;">
       <div>
         <p style="font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary); margin: 0; padding-top: 12px;">
           Olá, me chamo Gustavo, tenho 22 anos. Sou alguém curioso por natureza, que gosta de entender as coisas com profundidade, mas sem perder o bom humor no processo.
@@ -22,7 +22,7 @@
         </div>
       </div>
 
-       <div style="display: flex; flex-direction: column; gap: 16px; max-width: 360px; margin-top: -24px;">
+       <div style="display: flex; flex-direction: column; gap: 16px; max-width: 400px; margin-top: -24px;">
          <article class="card" style="padding: 16px; border-left: 3px solid var(--primary); background: linear-gradient(135deg, rgba(92, 200, 255, 0.08), transparent); box-shadow: 0 4px 20px rgba(92, 200, 255, 0.1);">
            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
              <div style="font-size: 1.3rem;">🎓</div>

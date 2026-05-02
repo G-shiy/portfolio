@@ -30,8 +30,8 @@
   --radius-lg: 24px;
   --radius-xl: 32px;
 
-  --container: 1120px;
-  --container-wide: 1280px;
+  --container: 1200px;
+  --container-wide: 1400px;
 
   --shadow-soft: 0 24px 80px rgba(0, 0, 0, 0.32);
   --transition: 180ms ease;
@@ -94,12 +94,12 @@ textarea {
 }
 
 .container {
-  width: min(100% - 20px, var(--container));
+  width: min(100% - 16px, var(--container));
   margin-inline: auto;
 }
 
 .wide {
-  width: min(100% - 20px, var(--container-wide));
+  width: min(100% - 16px, var(--container-wide));
   margin-inline: auto;
 }
 
@@ -313,14 +313,14 @@ p {
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
+  gap: 32px;
   grid-auto-rows: 1fr;
 }
 
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  gap: 32px;
   grid-auto-rows: 1fr;
 }
 
@@ -632,7 +632,7 @@ pre {
 @media (max-width: 560px) {
   .container,
   .wide {
-    width: min(100% - 16px, var(--container));
+    width: min(100% - 12px, var(--container));
   }
   .metrics {
     grid-template-columns: 1fr;
