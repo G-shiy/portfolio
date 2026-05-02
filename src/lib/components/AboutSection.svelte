@@ -31,10 +31,10 @@
         <div class="card-meta">experience / companies</div>
         <h3>Experiência profissional</h3>
         <p>
-          <strong>Crediclass</strong> — Desenvolvedor Backend (01/2026–Atual)<br />
-          <strong>Curva</strong> — Desenvolvedor Backend (08/2025–12/2025)<br />
-          <strong>Golden Tulip</strong> — Automação Financeira (02/2024–06/2025)<br />
-          <strong>Exército Brasileiro</strong> — Comunicações (03/2023–02/2024)<br />
+          <strong>Desenvolvedor Backend</strong> (01/2026–Atual)<br />
+          <strong>Desenvolvedor Backend</strong> (08/2025–12/2025)<br />
+          <strong>Automação Financeira</strong> (02/2024–06/2025)<br />
+          <strong>Comunicações</strong> (03/2023–02/2024)<br />
           <span style="font-size: 0.9rem; color: var(--text-secondary);">
             Sistemas internos com JavaFX, Spring Boot e Docker. Automação de escalas, restauração de servidor Samba.
           </span>
