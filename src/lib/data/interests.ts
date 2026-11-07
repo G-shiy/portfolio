@@ -42,7 +42,7 @@ export const interests: InterestCategory[] = [
       {
         title: 'Objetos com caráter',
         description:
-          'Tenho afinidade por computadores antigos, terminais, teclados mecânicos e interfaces instrumentais. Gosto de equipamentos que combinam funcionalidade, boa construção e identidade visual própria — objetos que envelhecem com personalidade.',
+          'Tenho afinidade por computadores antigos, terminais, teclados mecânicos e interfaces instrumentais. Gosto de equipamentos que combinam funcionalidade, boa construção e identidade visual própria: objetos que envelhecem com personalidade.',
       },
     ],
   },
@@ -53,7 +53,7 @@ export const interests: InterestCategory[] = [
       {
         title: 'Ambiente que me entende',
         description:
-          'Configurar meu ambiente de desenvolvimento é uma forma de experimentar, compreender e adaptar ferramentas às minhas necessidades. Não é sobre superioridade técnica — é sobre liberdade de escolha e prazer no ofício.',
+          'Configurar meu ambiente de desenvolvimento é uma forma de experimentar, compreender e adaptar ferramentas às minhas necessidades. Não é sobre superioridade técnica; é sobre liberdade de escolha e prazer no ofício.',
         highlights: ['Fedora', 'KDE', 'Niri', 'Neovim', 'tmux', 'Fish'],
       },
     ],
@@ -76,7 +76,7 @@ export const interests: InterestCategory[] = [
       {
         title: 'Atmosfera e significado',
         description:
-          'Aprecio a atmosfera e o significado que diferentes composições podem transmitir. A música acompanha o trabalho, a leitura e os momentos de pausa — não como ruído de fundo, mas como camada adicional de contexto.',
+          'Aprecio a atmosfera e o significado que diferentes composições podem transmitir. A música acompanha o trabalho, a leitura e os momentos de pausa, não como ruído de fundo, mas como camada adicional de contexto.',
       },
     ],
   },

@@ -8,7 +8,7 @@
 <section class="hero container" id="inicio" aria-labelledby="name">
   <div class="intro">
     <h1 id="name">Olá, sou <em>Gustavo.</em></h1>
-    <p class="hero-tagline">Gosto de entender como as coisas funcionam — e de construir coisas que façam sentido.</p>
+    <p class="hero-tagline">Gosto de entender como as coisas funcionam, e de construir coisas que façam sentido.</p>
     <p class="hero-copy">{profile.introduction}</p>
     <p class="hero-personal">Fora do código, gosto de boas histórias, jogos, música e de experimentar novas maneiras de configurar meu ambiente Linux.</p>
     <div class="actions">

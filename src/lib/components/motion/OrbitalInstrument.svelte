@@ -38,7 +38,7 @@
       <svg class="instrument-center" viewBox="0 0 132 132" fill="none" aria-hidden="true"><path d="M66 4v124M4 66h124" stroke="currentColor" opacity=".25"/><circle cx="66" cy="66" r="40" stroke="currentColor" opacity=".65"/><circle cx="66" cy="66" r="26" stroke="currentColor" opacity=".2"/><path d="M39 93 93 39" stroke="currentColor" stroke-width="1.5"/><circle cx="93" cy="39" r="4" fill="currentColor"/><path d="M42 42h11v11" stroke="currentColor" opacity=".5"/></svg>
     </div>
   </div>
-  <figcaption><span>Fig. 01 — Sinal & Sentido</span><p>Um ponto de referência.<br>Mais de uma forma de chegar.</p></figcaption>
+  <figcaption><span>Fig. 01 · Sinal & Sentido</span><p>Um ponto de referência.<br>Mais de uma forma de chegar.</p></figcaption>
 </figure>
 <style>
   .instrument{margin:0;min-width:0;width:min(100%,460px);justify-self:end;position:relative;display:grid;gap:var(--space-6);transform:translate3d(var(--pointer-x),var(--pointer-y),0);transition:transform var(--motion-reveal) var(--ease-soft)}

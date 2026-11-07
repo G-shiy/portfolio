@@ -5,8 +5,7 @@
   import Header from '$lib/components/layout/Header.svelte';
   import Hero from '$lib/components/sections/Hero.svelte';
   import About from '$lib/components/sections/About.svelte';
-  import Interests from '$lib/components/sections/Interests.svelte';
-  import Projects from '$lib/components/sections/Projects.svelte';
+    import Projects from '$lib/components/sections/Projects.svelte';
   import Contact from '$lib/components/sections/Contact.svelte';
   import displayFont from '$lib/assets/fonts/newsreader-normal.woff2?url';
   let paused = $state(false);
@@ -37,7 +36,7 @@
   });
 </script>
 <svelte:head>
-  <title>Gustavo Siqueira — Software Engineer</title>
+  <title>Gustavo Siqueira · Software Engineer</title>
   <meta name="description" content={profile.description} />
   <meta name="theme-color" content="#0b1112" />
   <meta name="author" content={profile.name} />
@@ -46,7 +45,7 @@
   <link rel="preload" href={displayFont} as="font" type="font/woff2" crossorigin="anonymous" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
-  <meta property="og:title" content="Gustavo Siqueira — Software Engineer" />
+  <meta property="og:title" content="Gustavo Siqueira · Software Engineer" />
   <meta property="og:description" content={profile.description} />
   <meta property="og:url" content={canonical} />
   <meta property="og:site_name" content="Gustavo Siqueira · Sinal & Sentido" />
@@ -63,7 +62,6 @@
   <main id="conteudo">
     <Hero {enabled} />
     <About />
-    <Interests />
     <Projects />
     <Contact />
   </main>
