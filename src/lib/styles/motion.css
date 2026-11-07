@@ -9,3 +9,81 @@
 .motion-paused *,.motion-paused *::before,.motion-paused *::after{animation-play-state:paused!important}
 html:has(.motion-paused){scroll-behavior:auto}
 @media(prefers-reduced-motion:reduce){.reading-progress{display:none}}
+
+/* Section reveal animations */
+@media (prefers-reduced-motion: no-preference) {
+  .section > *,
+  .about > *,
+  .hero-layout > *,
+  .featured,
+  .project-record,
+  .interest-group {
+    animation: section-reveal var(--motion-reveal) var(--ease-enter) both;
+  }
+
+  .section:nth-child(1) > * { animation-delay: 0ms; }
+  .section:nth-child(2) > * { animation-delay: 80ms; }
+  .section:nth-child(3) > * { animation-delay: 160ms; }
+  .section:nth-child(4) > * { animation-delay: 240ms; }
+  .section:nth-child(5) > * { animation-delay: 320ms; }
+}
+
+@keyframes section-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Scroll-driven reveals for better control */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .section > *,
+    .about > *,
+    .featured,
+    .project-record,
+    .interest-group {
+      animation: none;
+      animation-timeline: view();
+      animation-range: entry 10% cover 40%;
+    }
+
+    .section > * {
+      animation: section-reveal-scroll both;
+    }
+  }
+}
+
+@keyframes section-reveal-scroll {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Staggered reveals for lists */
+@media (prefers-reduced-motion: no-preference) {
+  .project-record,
+  .interest-group {
+    animation: list-reveal var(--motion-reveal) var(--ease-enter) both;
+  }
+}
+
+@keyframes list-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

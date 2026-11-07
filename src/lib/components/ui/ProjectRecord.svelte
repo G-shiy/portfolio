@@ -82,26 +82,29 @@
     border: 1px solid var(--border-subtle);
   }
   .project-content > p {
-    max-width: 65ch;
+    max-width: var(--measure-body);
     color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+    font-size: var(--text-md);
   }
   .project-content .project-thesis {
     font-weight: 500;
     color: var(--text-primary);
-    margin-bottom: var(--space-3);
+    margin-bottom: var(--space-4);
+    font-size: var(--text-lg);
   }
   .project-content .stack {
-    margin-top: var(--space-5);
+    margin-top: var(--space-6);
     font: var(--text-meta) / 1.8 var(--font-mono);
     color: var(--text-muted);
   }
   .project-content .achievement {
-    margin-top: var(--space-3);
+    margin-top: var(--space-4);
     font: var(--text-meta) / 1.6 var(--font-mono);
     color: var(--accent-primary);
   }
   details {
-    margin-top: var(--space-4);
+    margin-top: var(--space-5);
   }
   summary {
     cursor: pointer;
@@ -126,12 +129,14 @@
   }
   ul {
     padding-left: 1.2em;
-    max-width: 65ch;
+    max-width: var(--measure-body);
     color: var(--text-secondary);
-    margin-top: var(--space-2);
+    margin-top: var(--space-3);
+    font-size: var(--text-md);
+    line-height: var(--leading-relaxed);
   }
   li + li {
-    margin-top: var(--space-3);
+    margin-top: var(--space-4);
   }
   .prominent {
     padding-block: var(--space-12);
