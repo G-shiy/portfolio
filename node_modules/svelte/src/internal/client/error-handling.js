@@ -1,9 +1,16 @@
 /** @import { Derived, Effect } from '#client' */
 /** @import { Boundary } from './dom/blocks/boundary.js' */
 import { DEV } from 'esm-env';
-import { FILENAME } from '../../constants.js';
+import { FILENAME, HYDRATION_ERROR } from '../../constants.js';
 import { is_firefox } from './dom/operations.js';
-import { ERROR_VALUE, BOUNDARY_EFFECT, EFFECT_RAN } from './constants.js';
+import {
+	ERROR_VALUE,
+	BOUNDARY_EFFECT,
+	REACTION_RAN,
+	EFFECT,
+	DESTROYED,
+	DESTROYING
+} from './constants.js';
 import { define_property, get_descriptor } from '../shared/utils.js';
 import { active_effect, active_reaction } from './runtime.js';
 
@@ -25,22 +32,19 @@ export function handle_error(error) {
 		adjustments.set(error, get_adjustments(error, effect));
 	}
 
-	if ((effect.f & EFFECT_RAN) === 0) {
-		// if the error occurred while creating this subtree, we let it
-		// bubble up until it hits a boundary that can handle it
-		if ((effect.f & BOUNDARY_EFFECT) === 0) {
-			if (DEV && !effect.parent && error instanceof Error) {
-				apply_adjustments(error);
-			}
-
-			throw error;
+	// if the error occurred while creating this subtree, we let it
+	// bubble up until it hits a boundary that can handle it, unless
+	// it's an $effect in which case it doesn't run immediately
+	if ((effect.f & REACTION_RAN) === 0 && (effect.f & EFFECT) === 0) {
+		if (DEV && !effect.parent && error instanceof Error) {
+			apply_adjustments(error);
 		}
 
-		/** @type {Boundary} */ (effect.b).error(error);
-	} else {
-		// otherwise we bubble up the effect tree ourselves
-		invoke_error_boundary(error, effect);
+		throw error;
 	}
+
+	// otherwise we bubble up the effect tree ourselves
+	invoke_error_boundary(error, effect);
 }
 
 /**
@@ -48,8 +52,22 @@ export function handle_error(error) {
  * @param {Effect | null} effect
  */
 export function invoke_error_boundary(error, effect) {
+	if (error === HYDRATION_ERROR) {
+		throw error;
+	}
+
+	if (effect !== null && (effect.f & DESTROYED) !== 0) {
+		return;
+	}
+
 	while (effect !== null) {
-		if ((effect.f & BOUNDARY_EFFECT) !== 0) {
+		// Skip boundaries that are destroyed/destroying and cannot meaningfully handle the error.
+		if ((effect.f & BOUNDARY_EFFECT) !== 0 && (effect.f & (DESTROYED | DESTROYING)) === 0) {
+			if ((effect.f & REACTION_RAN) === 0) {
+				// we are still creating the boundary effect
+				throw error;
+			}
+
 			try {
 				/** @type {Boundary} */ (effect.b).error(error);
 				return;

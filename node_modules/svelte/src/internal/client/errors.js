@@ -148,6 +148,25 @@ export function each_key_duplicate(a, b, value) {
 }
 
 /**
+ * Keyed each block has key that is not idempotent — the key for item at index %index% was `%a%` but is now `%b%`. Keys must be the same each time for a given item
+ * @param {string} index
+ * @param {string} a
+ * @param {string} b
+ * @returns {never}
+ */
+export function each_key_volatile(index, a, b) {
+	if (DEV) {
+		const error = new Error(`each_key_volatile\nKeyed each block has key that is not idempotent — the key for item at index ${index} was \`${a}\` but is now \`${b}\`. Keys must be the same each time for a given item\nhttps://svelte.dev/e/each_key_volatile`);
+
+		error.name = 'Svelte error';
+
+		throw error;
+	} else {
+		throw new Error(`https://svelte.dev/e/each_key_volatile`);
+	}
+}
+
+/**
  * `%rune%` cannot be used inside an effect cleanup function
  * @param {string} rune
  * @returns {never}
@@ -407,22 +426,6 @@ export function rune_outside_svelte(rune) {
 		throw error;
 	} else {
 		throw new Error(`https://svelte.dev/e/rune_outside_svelte`);
-	}
-}
-
-/**
- * `setContext` must be called when a component first initializes, not in a subsequent effect or after an `await` expression
- * @returns {never}
- */
-export function set_context_after_init() {
-	if (DEV) {
-		const error = new Error(`set_context_after_init\n\`setContext\` must be called when a component first initializes, not in a subsequent effect or after an \`await\` expression\nhttps://svelte.dev/e/set_context_after_init`);
-
-		error.name = 'Svelte error';
-
-		throw error;
-	} else {
-		throw new Error(`https://svelte.dev/e/set_context_after_init`);
 	}
 }
 

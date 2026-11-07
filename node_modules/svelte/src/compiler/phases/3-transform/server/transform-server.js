@@ -15,6 +15,7 @@ import { CallExpression } from './visitors/CallExpression.js';
 import { ClassBody } from './visitors/ClassBody.js';
 import { Component } from './visitors/Component.js';
 import { ConstTag } from './visitors/ConstTag.js';
+import { DeclarationTag } from './visitors/DeclarationTag.js';
 import { DebugTag } from './visitors/DebugTag.js';
 import { EachBlock } from './visitors/EachBlock.js';
 import { ExpressionStatement } from './visitors/ExpressionStatement.js';
@@ -41,7 +42,6 @@ import { TitleElement } from './visitors/TitleElement.js';
 import { UpdateExpression } from './visitors/UpdateExpression.js';
 import { VariableDeclaration } from './visitors/VariableDeclaration.js';
 import { SvelteBoundary } from './visitors/SvelteBoundary.js';
-import { call_component_renderer } from './visitors/shared/utils.js';
 
 /** @type {Visitors} */
 const global_visitors = {
@@ -65,6 +65,7 @@ const template_visitors = {
 	AwaitBlock,
 	Component,
 	ConstTag,
+	DeclarationTag,
 	DebugTag,
 	EachBlock,
 	Fragment,
@@ -105,7 +106,7 @@ export function server_component(analysis, options) {
 		namespace: options.namespace,
 		preserve_whitespace: options.preserveWhitespace,
 		state_fields: new Map(),
-		skip_hydration_boundaries: false,
+		is_standalone: false,
 		is_instance: false
 	};
 
@@ -147,7 +148,7 @@ export function server_component(analysis, options) {
 	const legacy_reactive_declarations = [];
 
 	for (const [node] of analysis.reactive_statements) {
-		const statement = [...state.legacy_reactive_statements].find(([n]) => n === node);
+		const statement = state.legacy_reactive_statements.get(node);
 		if (statement === undefined) {
 			throw new Error('Could not find reactive statement');
 		}
@@ -164,7 +165,7 @@ export function server_component(analysis, options) {
 			}
 		}
 
-		instance.body.push(statement[1]);
+		instance.body.push(statement);
 	}
 
 	if (legacy_reactive_declarations.length > 0) {
@@ -209,14 +210,25 @@ export function server_component(analysis, options) {
 		];
 	}
 
-	if (
-		[...analysis.instance.scope.declarations.values()].some(
-			(binding) => binding.kind === 'store_sub'
-		)
-	) {
+	const store_subs = [...analysis.instance.scope.declarations.values()].filter(
+		(binding) => binding.kind === 'store_sub'
+	);
+
+	// a blocked subscription is only created once its promise resolves, so its teardown must wait until the render is done
+	const defer_store_teardown = store_subs.some((binding) => binding.blocker);
+
+	if (store_subs.length > 0) {
 		instance.body.unshift(b.var('$$store_subs'));
+
+		const unsubscribe = b.if(
+			b.id('$$store_subs'),
+			b.stmt(b.call('$.unsubscribe_stores', b.id('$$store_subs')))
+		);
+
 		template.body.push(
-			b.if(b.id('$$store_subs'), b.stmt(b.call('$.unsubscribe_stores', b.id('$$store_subs'))))
+			defer_store_teardown
+				? b.stmt(b.call('$$renderer.on_destroy', b.arrow([], b.block([unsubscribe]))))
+				: unsubscribe
 		);
 	}
 
@@ -256,11 +268,17 @@ export function server_component(analysis, options) {
 		);
 	}
 
-	let should_inject_context = dev || analysis.needs_context;
+	let should_inject_context = dev || analysis.needs_context || defer_store_teardown;
 
 	if (should_inject_context) {
 		component_block = b.block([
-			call_component_renderer(component_block, dev && b.id(component_name))
+			b.stmt(
+				b.call(
+					'$$renderer.component',
+					b.arrow([b.id('$$renderer')], component_block, false),
+					dev && b.id(component_name)
+				)
+			)
 		]);
 	}
 
@@ -295,7 +313,7 @@ export function server_component(analysis, options) {
 
 	const body = [...state.hoisted, ...module.body];
 
-	if (analysis.css.ast !== null && options.css === 'injected' && !options.customElement) {
+	if (analysis.css.ast !== null && analysis.inject_styles && !analysis.custom_element) {
 		const hash = b.literal(analysis.css.hash);
 		const code = b.literal(render_stylesheet(analysis.source, analysis, options).code);
 

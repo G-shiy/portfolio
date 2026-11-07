@@ -1,0 +1,11 @@
+/* Reading progress has a static fallback. No scroll event loop is needed. */
+.reading-progress{display:none}
+@supports(animation-timeline:scroll()){
+  @media(prefers-reduced-motion:no-preference){
+    .reading-progress{display:block;position:fixed;inset:0 0 auto;height:2px;z-index:40;background:var(--accent-primary);transform-origin:left;pointer-events:none;animation:reading-progress linear both;animation-timeline:scroll(root block)}
+  }
+}
+@keyframes reading-progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.motion-paused *,.motion-paused *::before,.motion-paused *::after{animation-play-state:paused!important}
+html:has(.motion-paused){scroll-behavior:auto}
+@media(prefers-reduced-motion:reduce){.reading-progress{display:none}}

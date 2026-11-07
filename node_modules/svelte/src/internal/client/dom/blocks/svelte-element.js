@@ -7,7 +7,7 @@ import {
 	set_hydrate_node,
 	set_hydrating
 } from '../hydration.js';
-import { create_text, get_first_child } from '../operations.js';
+import { create_element, create_text, get_first_child } from '../operations.js';
 import { block, teardown } from '../../reactivity/effects.js';
 import { set_should_intro } from '../../render.js';
 import { active_effect } from '../../runtime.js';
@@ -57,7 +57,11 @@ export function element(node, get_tag, is_svg, render_fn, get_namespace, locatio
 
 	block(() => {
 		const next_tag = get_tag() || null;
-		var ns = get_namespace ? get_namespace() : is_svg || next_tag === 'svg' ? NAMESPACE_SVG : null;
+		var ns = get_namespace
+			? get_namespace()
+			: is_svg || next_tag === 'svg'
+				? NAMESPACE_SVG
+				: undefined;
 
 		if (next_tag === null) {
 			branches.ensure(null, null);
@@ -67,11 +71,8 @@ export function element(node, get_tag, is_svg, render_fn, get_namespace, locatio
 
 		branches.ensure(next_tag, (anchor) => {
 			if (next_tag) {
-				element = hydrating
-					? /** @type {Element} */ (element)
-					: ns
-						? document.createElementNS(ns, next_tag)
-						: document.createElement(next_tag);
+				var is_hydrating = hydrating;
+				element = hydrating ? /** @type {Element} */ (element) : create_element(next_tag, ns);
 
 				if (DEV && location) {
 					// @ts-expect-error
@@ -88,9 +89,11 @@ export function element(node, get_tag, is_svg, render_fn, get_namespace, locatio
 				assign_nodes(element, element);
 
 				if (render_fn) {
+					var tmp_comment = null;
+
 					if (hydrating && is_raw_text_element(next_tag)) {
-						// prevent hydration glitches
-						element.append(document.createComment(''));
+						// prevent hydration glitches (code just below expects an anchor)
+						element.append((tmp_comment = document.createComment('')));
 					}
 
 					// If hydrating, use the existing ssr comment as the anchor so that the
@@ -114,14 +117,15 @@ export function element(node, get_tag, is_svg, render_fn, get_namespace, locatio
 					// contains children, it's a user error (which is warned on elsewhere)
 					// and the DOM will be silently discarded
 					render_fn(element, child_anchor);
-
+					tmp_comment?.remove();
 					set_animation_effect_override(null);
 				}
 
 				// we do this after calling `render_fn` so that child effects don't override `nodes.end`
 				/** @type {Effect & { nodes: EffectNodes }} */ (active_effect).nodes.end = element;
 
-				anchor.before(element);
+				// we only move the node if we are not hydrating since a claimed element is already in place
+				if (!is_hydrating) anchor.before(element);
 			}
 
 			if (hydrating) {

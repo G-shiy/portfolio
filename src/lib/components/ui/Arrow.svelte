@@ -1,0 +1,3 @@
+<script lang="ts">let { diagonal = false }: { diagonal?: boolean } = $props();</script>
+<svg class:diagonal width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<style>svg{flex-shrink:0;transition:transform var(--motion-base) var(--ease-precise)}.diagonal{rotate:-45deg}:global(a:hover) svg,:global(a:focus-visible) svg{transform:translateX(2px)}@media(prefers-reduced-motion:reduce){svg{transition:none}:global(a:hover) svg,:global(a:focus-visible) svg{transform:none}}</style>

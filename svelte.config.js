@@ -11,10 +11,10 @@ const config = {
 			strict: true
 		}),
 		prerender: {
-			handleMissingId: 'warn'
+			handleMissingId: 'fail'
 		},
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/portfolio' : ''
+			base: process.env.PAGES_BASE_PATH ?? (process.env.NODE_ENV === 'production' ? '/portfolio' : '')
 		}
 	}
 };
