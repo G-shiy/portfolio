@@ -1,0 +1,51 @@
+/* Reading progress has a static fallback. No scroll event loop is needed. */
+.reading-progress{display:none}
+@supports(animation-timeline:scroll()){
+  @media(prefers-reduced-motion:no-preference){
+    .reading-progress{display:block;position:fixed;inset:0 0 auto;height:2px;z-index:40;background:var(--accent-primary);transform-origin:left;pointer-events:none;animation:reading-progress linear both;animation-timeline:scroll(root block)}
+  }
+}
+@keyframes reading-progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.motion-paused *,.motion-paused *::before,.motion-paused *::after{animation-play-state:paused!important}
+.motion-paused::before,.motion-paused::after{animation-play-state:paused!important}
+html:has(.motion-paused){scroll-behavior:auto}
+@media(prefers-reduced-motion:reduce){.reading-progress{display:none}}
+
+/* A warm study-light drifts against the page at a different scroll speed. */
+.portfolio{position:relative;isolation:isolate}
+.portfolio::before,.portfolio::after{content:"";position:fixed;z-index:-1;pointer-events:none;border-radius:50%}
+.portfolio::before{inline-size:min(82vw,1040px);aspect-ratio:1;inset-block-start:-25vh;inset-inline-start:-35vw;background:radial-gradient(circle at 48% 46%,color-mix(in srgb,var(--accent-primary) 16%,transparent),transparent 37%),radial-gradient(circle,color-mix(in srgb,var(--accent-subtle) 8%,transparent),transparent 70%);opacity:.78}
+.portfolio::after{inline-size:min(72vw,880px);aspect-ratio:1;inset-block-start:38vh;inset-inline-end:-33vw;background:radial-gradient(circle at 48% 45%,color-mix(in srgb,var(--accent-primary) 18%,transparent),transparent 34%),radial-gradient(circle at 52% 48%,color-mix(in srgb,var(--accent-subtle) 12%,transparent),transparent 71%);opacity:.72;animation:ambient-float var(--motion-ambient) var(--ease-soft) infinite alternate}
+
+@supports(animation-timeline:scroll()){
+  @media(prefers-reduced-motion:no-preference){
+    .portfolio:not(.motion-paused)::before{animation:ambient-parallax 1s linear both;animation-timeline:scroll(root block);animation-range:0% 100%}
+  }
+}
+
+@keyframes ambient-parallax{from{translate:0 -4vh}to{translate:0 10vh}}
+@keyframes ambient-float{from{transform:translate3d(2vw,-2vh,0) scale(.98)}to{transform:translate3d(-2vw,3vh,0) scale(1.04)}}
+
+@media(prefers-reduced-motion:reduce){.portfolio::before,.portfolio::after{animation:none;translate:none;transform:none}}
+
+/* Featured work reveals in its own reading context, where supported. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .featured {
+      animation: featured-reveal var(--motion-reveal) var(--ease-enter) both;
+      animation-timeline: view();
+      animation-range: entry 8% cover 32%;
+    }
+  }
+}
+
+@keyframes featured-reveal {
+  from {
+    opacity: .72;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
